@@ -1,0 +1,656 @@
+
+.headerScrollNo-portfolio{
+  height: 120px;
+  background-color: #fff;
+
+  .logo {
+    top: 19px;
+  }
+  .menu-button{
+    top: 45px;
+    .menu-button__line{
+      background-color: #000;
+    }
+    &:before{
+      color: black;
+    }
+    &:hover:before {
+      color: $red;
+      transition: color .3s;
+    }
+  }
+
+}
+.headerScroll-portfolio{
+  height: 90px;
+  .logo{
+    top: 10px;
+  }
+  .menu-button{
+    top: 30px;
+  }
+}
+.header-section-portfolio{
+  height: 81vh;
+  background-image: url(../img/protoBgHead.png);
+  background-size:100%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+
+
+  .filter {
+    background: rgba(0, 0, 0, .8);
+    .header {
+      .nameBlock {
+        top: 51%;
+        #holder {
+          position: relative;
+          margin: 40px auto -10px;
+          height:auto;
+          width: 50%;
+
+
+        }
+        .lineBox {
+          position: relative;
+          width: 900px;
+
+          height: 90px;
+
+
+          .lineAnimate {
+            &:before {
+              background-color: $red;
+            }
+            &:after {
+
+              background-color: $red;
+
+            }
+          }
+
+          .lineAnimate2 {
+            &:before {
+              background-color: $red;
+
+            }
+            &:after {
+
+              background-color: $red;
+
+
+            }
+          }
+          .lineAnimate1 {
+            &:before {
+              width: 5%;
+              animation-name: bottomLine1;
+              background-color:$red;
+            }
+            &:after {
+              width: 5%;
+              animation-name: bottomLine1;
+              background-color:$red;
+            }
+          }
+
+
+        }
+
+        h1 {
+          margin: 0;
+          text-transform: uppercase;
+          font-family: "Gilroy Regular", sans-serif;
+          font-weight: 600;
+          font-size: 72px;
+          letter-spacing: 2px;
+          position: relative;
+          margin-top: 17px;
+          margin-bottom: 20px;
+          &:after {
+           display: none;
+
+          }
+        }
+        p {
+          font-size: 22px;
+          line-height: 38px;
+          width: 20%;
+
+
+        }
+
+
+        .popup-btn {
+          &:hover {
+            border: 2px solid white;
+          }
+        }
+      }
+    }
+
+  }
+  }
+
+@media (max-width: 1400px) {
+  .header-section-portfolio{
+    height: 81vh;
+    background-image: url(../img/protoBgHead.png);
+    background-size:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+
+    .filter {
+      background: rgba(0, 0, 0, .8);
+      .header {
+        .nameBlock {
+          top: 51%;
+          #holder {
+            position: relative;
+            margin: 40px auto 10px;
+            height: auto;
+            width: 80%;
+
+
+          }
+          .lineBox {
+            position: relative;
+            width: 900px;
+
+            height: 90px;
+
+
+            .lineAnimate {
+              &:before {
+                background-color: $red;
+              }
+              &:after {
+
+                background-color: $red;
+
+              }
+            }
+
+            .lineAnimate2 {
+              &:before {
+                background-color: $red;
+
+              }
+              &:after {
+
+                background-color: $red;
+
+
+              }
+            }
+            .lineAnimate1 {
+              &:before {
+                width: 5%;
+                animation-name: bottomLine1;
+                background-color:$red;
+              }
+              &:after {
+                width: 5%;
+                animation-name: bottomLine1;
+                background-color:$red;
+              }
+            }
+
+
+          }
+
+          h1 {
+            margin: 0;
+            text-transform: uppercase;
+            font-family: "Gilroy Regular", sans-serif;
+            font-weight: 600;
+            font-size: 72px;
+            letter-spacing: 2px;
+            position: relative;
+            margin-top: 17px;
+            margin-bottom: 20px;
+            &:after {
+              display: none;
+
+            }
+          }
+          p {
+            font-size: 22px;
+            line-height: 38px;
+            width: 20%;
+
+
+          }
+
+
+          .popup-btn {
+            &:hover {
+              border: 2px solid white;
+            }
+          }
+        }
+      }
+
+    }
+  }
+  .headerScrollNo-portfolio{
+    height: 120px;
+    background-color: #fff;
+
+    .logo {
+      top: 19px;
+    }
+    .menu-button{
+      top: 45px;
+      .menu-button__line{
+        background-color: #000;
+      }
+      &:before{
+        color: black;
+      }
+      &:hover:before {
+        color: $red;
+        transition: color .3s;
+      }
+    }
+
+  }
+  .headerScroll-portfolio{
+    height: 75px;
+    .logo{
+      top: 10px;
+    }
+    .buttonStockScroll {
+      position: absolute;
+      top: 20px;
+      right: 220px;
+
+    }
+    .menu-button{
+      top: 23px;
+    }
+  }
+
+
+}
+@media (max-width: 993px) {
+  .header-section-portfolio{
+    height: 100vh;
+    background-image: url(../img/protoBgHead.png);
+    background-size:cover;
+    background-position:0 120px;
+    background-repeat: no-repeat;
+
+
+    .filter {
+      background: rgba(0, 0, 0, .85);
+      .header {
+        .nameBlock {
+          top: 51%;
+          #holder {
+            position: relative;
+            margin: 40px auto 10px;
+            height: auto;
+
+
+          }
+          .lineBox {
+            position: relative;
+            width: 680px;
+
+            height: 70px;
+
+
+            .lineAnimate {
+              &:before {
+                background-color: $red;
+              }
+              &:after {
+
+                background-color: $red;
+
+              }
+            }
+
+            .lineAnimate2 {
+              &:before {
+                background-color: $red;
+
+              }
+              &:after {
+
+                background-color: $red;
+
+
+              }
+            }
+            .lineAnimate1 {
+              &:before {
+                width: 5%;
+                animation-name: bottomLine1;
+                background-color:$red;
+              }
+              &:after {
+                width: 5%;
+                animation-name: bottomLine1;
+                background-color:$red;
+              }
+            }
+
+
+          }
+
+          h1 {
+            margin: 0;
+            text-transform: uppercase;
+            font-family: "Gilroy Regular", sans-serif;
+            font-weight: 600;
+            font-size: 52px;
+            letter-spacing: 2px;
+            position: relative;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            &:after {
+              display: none;
+
+            }
+          }
+          p {
+            font-size: 20px;
+            line-height: 38px;
+
+
+          }
+
+
+          .popup-btn {
+            &:hover {
+              border: 2px solid white;
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+}
+@media (max-width: 768px) {
+  .headerScroll-portfolio{
+    height: 75px;
+    .logo{
+      top: 10px;
+    }
+    .buttonStockScroll {
+      position: absolute;
+      top: 22px;
+      right: 120px;
+
+    }
+    .menu-button{
+      top: 23px;
+    }
+  }
+  .header-section-portfolio{
+
+    .filter {
+      background: rgba(0, 0, 0, .85);
+      .header {
+        .nameBlock {
+          top: 51%;
+          #holder {
+
+
+          }
+          .lineBox {
+            position: relative;
+            width: 450px;
+
+            height: 50px;
+
+
+            .lineAnimate {
+              &:before {
+
+                height: 5px;
+              }
+              &:after {
+
+                height: 5px;
+
+              }
+            }
+
+            .lineAnimate2 {
+              &:before {
+                width: 5px;
+
+              }
+              &:after {
+
+                width: 5px;
+
+
+              }
+            }
+            .lineAnimate1 {
+              &:before {
+                height: 5px;
+              }
+              &:after {
+                height: 5px;
+              }
+            }
+
+
+          }
+
+          h1 {
+            text-transform: uppercase;
+            font-family: "Gilroy Regular", sans-serif;
+            font-weight: 600;
+            font-size: 32px;
+            letter-spacing: 2px;
+            position: relative;
+            margin-top: 10px;
+
+            &:after {
+              display: none;
+
+            }
+          }
+          p {
+            width: 50%;
+            font-size: 18px;
+
+
+
+          }
+
+
+          button {
+
+
+          }
+        }
+      }
+
+    }
+  }
+
+}
+@media (max-width: 480px) {
+  .header-section-portfolio{
+    height: 100vh;
+    background-image: url(../img/protoBgHead.png);
+    background-size:cover;
+    background-position:0 120px;
+    background-repeat: no-repeat;
+
+
+    .filter {
+      background: rgba(0, 0, 0, .85);
+      .header {
+        .nameBlock {
+          top: 51%;
+          #holder {
+
+
+          }
+          .lineBox {
+            position: relative;
+            width: 330px;
+
+            height: 35px;
+
+
+            .lineAnimate {
+              &:before {
+
+                height: 5px;
+              }
+              &:after {
+
+                height: 5px;
+
+              }
+            }
+
+            .lineAnimate2 {
+              &:before {
+                width: 5px;
+
+              }
+              &:after {
+
+                width: 5px;
+
+
+              }
+            }
+            .lineAnimate1 {
+              &:before {
+                height: 5px;
+              }
+              &:after {
+                height: 5px;
+              }
+            }
+
+
+          }
+
+          h1 {
+            text-transform: uppercase;
+            font-family: "Gilroy Regular", sans-serif;
+            font-weight: 600;
+            font-size: 24px;
+            letter-spacing: 2px;
+            position: relative;
+            margin-top: 0px;
+
+            &:after {
+              display: none;
+
+            }
+          }
+          p {
+            font-size: 14px;
+            line-height: 38px;
+
+
+          }
+
+
+          button {
+
+
+          }
+        }
+      }
+
+    }
+  }
+  @keyframes bottomLine1 {
+    0% {
+      width: 0;
+    }
+    30% {
+      width: 0;
+    }
+    100% {
+      width: 5%;
+
+    }
+  }
+
+
+}
+@media (max-width: 768px) {
+  @keyframes bottomLine1 {
+    0% {
+      width: 0;
+    }
+    30% {
+      width: 0;
+    }
+    100% {
+      width: 5%;
+
+    }
+  }
+}
+//////////////////////////////when//////////////////////////////
+
+.section-explanation{
+  height: inherit;
+  text-align: inherit;
+  padding:70px 0;
+  &:before{
+    display: none;
+  }
+  .when-block, .what-block{
+    display: flex;
+    justify-content: space-between;
+    .when-img{
+      width: 49%;
+img{
+  width: 100%;
+}
+
+    }
+    .when-content{
+      width: 49%;
+      .arrowBefore{
+        margin-left: 160px;
+      }
+
+
+    }
+
+  }
+  .what-block{
+    margin-top: 70px;
+    p:first-child:before{
+      background-image: url(../img/what-item.png);
+   width: 96px;
+   height: 95px;
+    }
+    .when-content{
+      width: 49%;
+      .robot{
+        margin-left: 160px;
+      }
+      button{
+        margin-top: 20px;
+        margin-left: 160px;
+      }
+
+
+    }
+  }
+
+}
