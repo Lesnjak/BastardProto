@@ -920,7 +920,7 @@ input::-webkit-inner-spin-button {
       height: 2px;
       background-color: $red;
       left: 0;
-      top: 150px;
+      top: 142px;
     }
     &:first-child:before{
       content: '';
@@ -929,7 +929,7 @@ input::-webkit-inner-spin-button {
       width: 102px;
      height: 102px;
       left: 0;
-      top: 180px;
+      top: 170px;
     }
   }
 }
@@ -943,8 +943,8 @@ input::-webkit-inner-spin-button {
       width: 24px;
       height: 24px;
       left: -40px;
-      top: 50%;
-      transform: translateY(-50%);
+      top: 0;
+
     }
     p{
       font-size:18px;
@@ -960,4 +960,10 @@ input::-webkit-inner-spin-button {
   color: black;
   font-family: Robot,sans-serif;
 
+}
+.gilReg{
+  position: relative;
+  font-size:24px;
+  font-family:"Gilroy Regular",sans-serif;
+  color: black;
 }
