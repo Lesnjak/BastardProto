@@ -574,20 +574,21 @@
 
     }
   }
-  @keyframes bottomLine1 {
-    0% {
-      width: 0;
-    }
-    30% {
-      width: 0;
-    }
-    100% {
-      width: 5%;
 
-    }
+
+
+}
+@keyframes bottomLine1 {
+  0% {
+    width: 0;
   }
+  30% {
+    width: 0;
+  }
+  100% {
+    width: 5%;
 
-
+  }
 }
 @media (max-width: 768px) {
   @keyframes bottomLine1 {
