@@ -1,6 +1,6 @@
 
 .footer {
-  border-top: 4px solid transparent;
+  border-top: 4px solid black;
   padding: 40px 0;
   position: relative;
 
@@ -156,6 +156,15 @@
     transform: translateX(-50%);
 
   }
+}
+@media (max-width: 1400px) {
+
+  .footer .footer-box-right {
+    padding-left:30px;
+
+
+  }
+
 }
 
 @media (max-width: 1200px) {

@@ -933,6 +933,13 @@ input::-webkit-inner-spin-button {
     }
   }
 }
+@media (max-width: 480px) {
+  .redBlack{
+    p{
+      font-size:32px;
+    }
+  }
+}
 .arrowBefore{
   li{
     position: relative;
@@ -966,4 +973,22 @@ input::-webkit-inner-spin-button {
   font-size:24px;
   font-family:"Gilroy Regular",sans-serif;
   color: black;
+}
+.for-black-block{
+  font-size:24px;
+  color: #FFFFFF;
+  font-family:"Gilroy Light",sans-serif;
+  margin: 0;
+  transition: .3s;
+}
+.transparent-button{
+  background-color:transparent;
+  border: 2px solid black;
+  color: black;
+  &:hover{
+    background-color: $red !important;
+    border: 2px solid $red;
+    color: #FFFFFF;
+
+  }
 }
