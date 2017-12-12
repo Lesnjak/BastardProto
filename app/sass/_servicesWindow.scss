@@ -1,0 +1,142 @@
+.servise-servise{
+
+  .buttonBlackLine:hover {
+
+  }
+
+
+  .slider-nav-three {
+
+  }
+  .slick-slide {
+
+    div {
+
+    }
+
+  }
+  .circle-image-box {
+display: block;
+    position: relative;
+    z-index: 1000;
+    outline: none;
+    .circle-image {
+border: 2px solid white;
+      &.image1 {
+        background-image: url(../img/lending-white.png);
+      }
+      &.image2 {
+        background-image: url(../img/s-store.png);
+      }
+      &.image3 {
+        background-image: url(../img/s-proto.png);
+      }
+      &.image4 {
+        background-image: url(../img/s-corp.png);
+      }
+      &.image5 {
+        background-image: url(../img/s-veb.png);
+      }
+    }
+    label {
+
+      color: white;
+
+    }
+    &:hover {
+      label {
+
+      }
+      .circle-image {
+        background-color: #fff;
+        &.image1 {
+
+          background-image: url(../img/proto-red.png);
+        }
+        &.image2 {
+          background-image: url(../img/store-red.png);
+        }
+        &.image3 {
+          background-image: url(../img/s-proto-red.png);
+        }
+        &.image4 {
+          background-image: url(../img/corp-red.png);
+        }
+        &.image5 {
+          background-image: url(../img/veb-red.png);
+        }
+      }
+    }
+
+  }
+
+  .slick-prev, .slick-next {
+    z-index: 100;
+    &:after {
+      position: absolute;
+      content: '➞';
+      right: 25px;
+      top: 15px;
+      font-family: "Gilroy Bold", sans-serif;
+      color: white;
+      font-size: 24px;
+      transition: .2s;
+
+    }
+    &:hover:after {
+      color: $red;
+    }
+
+    &:before {
+      display: none;
+
+    }
+
+  }
+  .slick-prev {
+    left: -100px;
+    &:after {
+      transform: rotate(180deg);
+    }
+  }
+  .slick-next {
+    right: -110px;
+  }
+
+  .content-box {
+    position: relative;
+    .slider-shoise {
+      position: absolute;
+      margin: auto;
+      top: 50px;
+      left: 0;
+      right: 0;
+      width: 85%;
+
+      .grey-box {
+        float: left;
+        width: 49%;
+
+        & img {
+          box-shadow: none;
+          width: 100%;
+        }
+
+      }
+      .content-box {
+        text-align: left;
+        float: left;
+        width: 50%;
+        height: auto;
+        padding: 38px 0 0 30px;
+
+      }
+      button {
+        margin-right: 30px;
+        width: 44%;
+      }
+    }
+
+  }
+
+}

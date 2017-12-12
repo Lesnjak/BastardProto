@@ -136,7 +136,8 @@
   #radio33:checked ~ .marLeft .slider-nav-three .circle-image-box label[for='radio33'],
   #radio44:checked ~ .marLeft .slider-nav-three .circle-image-box label[for='radio44'],
   #radio55:checked ~ .marLeft .slider-nav-three .circle-image-box label[for='radio55'],
-  #radio66:checked ~ .marLeft .slider-nav-three .circle-image-box label[for='radio66'] {
+  #radio66:checked ~ .marLeft .slider-nav-three .circle-image-box label[for='radio66'],
+  #radio77:checked ~ .marLeft .slider-nav-three .circle-image-box label[for='radio77']{
     color: $red;
     & .circle-image {
       width: 130px;

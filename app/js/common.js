@@ -573,5 +573,9 @@ $(document).ready(function () {
 $(document).ready(function () {
 
 });
+$('.servise-servise .circle-image').on('click',function () {
+    $(this).parent().parent()[0].click();
+
+})
 
 
