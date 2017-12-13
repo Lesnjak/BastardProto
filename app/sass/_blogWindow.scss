@@ -1,0 +1,202 @@
+.header-section-blog .filter .header .nameBlock .lineBox h1 {
+  display: inline-block;
+  margin: 20px 140px 0 140px;
+  & span{
+    color: $red;
+  }
+}
+.header-section-blog .filter .header .nameBlock .lineBox .lineAnimate1:before {
+  width: 10%;
+}
+.header-section-blog .filter .header .nameBlock .lineBox .lineAnimate1:after {
+  width: 10%;
+}
+
+@media (max-width: 768px) {
+  .header-section-blog .filter .header .nameBlock .lineBox h1 {
+    display: inline-block;
+    margin: 10px 80px 0 80px;
+    & span{
+      color: $red;
+    }
+  }
+}
+
+@media (max-width:480px) {
+  .header-section-blog .filter .header .nameBlock .lineBox h1 {
+    display: inline-block;
+    margin: 0px 40px 0 40px;
+    & span{
+      color: $red;
+    }
+  }
+}
+
+
+
+.clients-blog{
+  #blog1:checked~.blog-buttons label:nth-child(1){
+    background-color: $red;
+    color: #FFFFFF;
+  }
+  #blog2:checked~.blog-buttons label:nth-child(2){
+    background-color: $red;
+    color: #FFFFFF;
+  }
+  #blog3:checked~.blog-buttons label:nth-child(3){
+    background-color: $red;
+    color: #FFFFFF;
+  }
+  #blog4:checked~.blog-buttons label:nth-child(4){
+    background-color: $red;
+    color: #FFFFFF;
+  }
+  #blog5:checked~.blog-buttons label:nth-child(5){
+    background-color: $red;
+    color: #FFFFFF;
+  }
+  #blog6:checked~.blog-buttons label:nth-child(6){
+    background-color: $red;
+    color: #FFFFFF;
+  }
+.blog-buttons{
+  label{
+    cursor: pointer;
+    width: auto;
+    font-size:20px;
+    color: $red;
+    text-transform: uppercase;
+    background-color: #fff;
+    border: 2px solid $red;
+    padding:3px 30px ;
+    border-radius: 30px;
+    font-family:"Gilroy Bold",sans-serif;
+    transition: .3s;
+    &:hover{
+      background-color: $red;
+      color: #FFFFFF;
+    }
+
+  }
+}
+.all-blogs{
+
+   .blog-section{
+   display: none;
+  float: left;
+     position:relative;
+     top: 0;
+     left: 0;
+    .block {
+      position: relative;
+      width: 24%;
+      cursor: pointer;
+      float: left;
+      margin: 0.5%;
+      &:nth-child(1){
+        width: 49%;
+        & p {
+          font-size: 22px;
+        }
+      }
+      &:nth-child(2){
+        width: 49%;
+        & p {
+          font-size: 22px;
+        }
+      }
+      &:nth-child(3){
+        width: 49%;
+        & p {
+          font-size: 22px;
+        }
+      }
+      &:last-child{
+
+
+      }
+      &:before {
+        position: absolute;
+        content: '';
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: linear-gradient(transparent, black 80%);
+
+      }
+      &:hover:before {
+        position: absolute;
+        content: '';
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(232, 17, 17, .6);
+
+      }
+
+      &:hover:after {
+        position: absolute;
+        content: '';
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 25px;
+        height: 25px;
+        margin: auto;
+        background-image: url("../img/search.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+      }
+      .data {
+        position: absolute;
+        top: 30px;
+        right: 0;
+        width: 140px;
+        height: auto;
+        line-height: 30px;
+        background-color: #fff;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+      }
+      img {
+        width: 100%;
+        height: auto;
+
+      }
+      p {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 0 20px;
+        color: #FFFFFF;
+        text-align: left;
+        font-size: 16px;
+
+      }
+    }
+}
+  }
+  #blog1:checked~.all-blogs .one{
+    display: block;
+  }
+  #blog2:checked~.all-blogs .two{
+    display: block;
+  }
+  #blog3:checked~.all-blogs .three{
+    display: block;
+  }
+  #blog4:checked~.all-blogs .four{
+    display: block;
+  }
+  #blog5:checked~.all-blogs .five{
+    display: block;
+  }
+  #blog6:checked~.all-blogs .six{
+    display: block;
+  }
+}

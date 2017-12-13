@@ -1,49 +1,50 @@
 
-.servise {
+
+.servise{
   text-align: center;
   position: relative;
   border-top: 4px solid transparent;
-  height: 835px;
-  .buttonBlackLine:hover {
+  height: 850px;
+  .buttonBlackLine:hover{
     background-color: #FFFFFF;
   }
-  .button-tr {
+  .button-tr{
     color: black;
     border: 2px solid black;
-    &:before {
+    &:before{
       background-image: url(../img/play-black.png);
       left: 10px;
       transition: .3s;
 
     }
-    &:hover {
+    &:hover{
       background-color: $red;
       border: 2px solid $red;
       color: #FFFFFF;
 
     }
-    &:hover:before {
+    &:hover:before{
       background-image: url(../img/play.png);
       transition: .3s;
     }
   }
-  input[type='radio'] {
+  input[type='radio']{
     display: none;
   }
-  .slider-nav-three {
-    width: 85%;
+  .slider-nav-three{
+    width: 80%;
     margin: auto;
   }
   .slick-slide {
     outline: none;
-    div {
+    div{
       outline: none;
     }
 
   }
-  .circle-image-box {
+  .circle-image-box{
 
-    .circle-image {
+    .circle-image{
       transition: all .3s;
       cursor: pointer;
       position: absolute;
@@ -51,27 +52,27 @@
       right: 0;
       bottom: 35px;
       margin: auto;
-      &.image1 {
+      &.image1{
         background-image: url(../img/lending.png);
       }
-      &.image2 {
+      &.image2{
         background-image: url(../img/s-store.png);
       }
-      &.image3 {
+      &.image3{
         background-image: url(../img/s-proto.png);
       }
-      &.image4 {
+      &.image4{
         background-image: url(../img/s-corp.png);
       }
-      &.image5 {
+      &.image5{
         background-image: url(../img/s-veb.png);
       }
     }
-    label {
+    label{
 
       display: block;
       color: black;
-      font-size: 18px;
+      font-size:18px;
       transition: all .2s;
       cursor: pointer;
       position: absolute;
@@ -82,30 +83,30 @@
       right: 0;
 
     }
-    &:hover {
-      label {
+    &:hover{
+      label{
         color: $red;
       }
-      .circle-image {
+      .circle-image{
         width: 130px;
         height: 130px;
         border: 2px solid $red;
         transition: all .2s;
-        background-size: 70%;
-        &.image1 {
+        background-size:70% ;
+        &.image1{
 
           background-image: url(../img/proto-red.png);
         }
-        &.image2 {
+        &.image2{
           background-image: url(../img/store-red.png);
         }
-        &.image3 {
+        &.image3{
           background-image: url(../img/s-proto-red.png);
         }
-        &.image4 {
+        &.image4{
           background-image: url(../img/corp-red.png);
         }
-        &.image5 {
+        &.image5{
           background-image: url(../img/veb-red.png);
         }
       }
@@ -117,48 +118,49 @@
   .content3 .slider-shoise,
   .content4 .slider-shoise,
   .content5 .slider-shoise,
-  .content6 .slider-shoise {
+  .content6 .slider-shoise{
     transition: 1s;
     opacity: 0;
     z-index: 99;
   }
-  #radio11:checked ~ .row .content-box .content1 .slider-shoise,
-  #radio22:checked ~ .row .content-box .content2 .slider-shoise,
-  #radio33:checked ~ .row .content-box .content3 .slider-shoise,
-  #radio44:checked ~ .row .content-box .content4 .slider-shoise,
-  #radio55:checked ~ .row .content-box .content5 .slider-shoise,
-  #radio66:checked ~ .row .content-box .content6 .slider-shoise {
+  #radio11:checked ~.row .content-box .content1 .slider-shoise,
+  #radio22:checked ~.row .content-box .content2 .slider-shoise,
+  #radio33:checked ~.row .content-box .content3 .slider-shoise,
+  #radio44:checked ~.row .content-box .content4 .slider-shoise,
+  #radio55:checked ~.row .content-box .content5 .slider-shoise,
+  #radio66:checked ~.row .content-box .content6 .slider-shoise
+  {
     z-index: 100;
     opacity: 1;
   }
-  #radio11:checked ~ .marLeft .slider-nav-three .circle-image-box label[for='radio11'],
-  #radio22:checked ~ .marLeft .slider-nav-three .circle-image-box label[for='radio22'],
-  #radio33:checked ~ .marLeft .slider-nav-three .circle-image-box label[for='radio33'],
-  #radio44:checked ~ .marLeft .slider-nav-three .circle-image-box label[for='radio44'],
-  #radio55:checked ~ .marLeft .slider-nav-three .circle-image-box label[for='radio55'],
-  #radio66:checked ~ .marLeft .slider-nav-three .circle-image-box label[for='radio66'],
-  #radio77:checked ~ .marLeft .slider-nav-three .circle-image-box label[for='radio77']{
+  #radio11:checked ~.marLeft .slider-nav-three .circle-image-box label[for='radio11'],
+  #radio22:checked ~.marLeft .slider-nav-three .circle-image-box label[for='radio22'],
+  #radio33:checked ~.marLeft .slider-nav-three .circle-image-box label[for='radio33'],
+  #radio44:checked ~.marLeft .slider-nav-three .circle-image-box label[for='radio44'],
+  #radio55:checked ~.marLeft .slider-nav-three .circle-image-box label[for='radio55'],
+  #radio66:checked ~.marLeft .slider-nav-three .circle-image-box label[for='radio66']
+  {
     color: $red;
-    & .circle-image {
+    & .circle-image{
       width: 130px;
       height: 130px;
       border: 2px solid $red;
       transition: all .2s;
-      background-size: 70%;
-      &.image1 {
+      background-size:70% ;
+      &.image1{
 
         background-image: url(../img/proto-red.png);
       }
-      &.image2 {
+      &.image2{
         background-image: url(../img/store-red.png);
       }
-      &.image3 {
+      &.image3{
         background-image: url(../img/s-proto-red.png);
       }
-      &.image4 {
+      &.image4{
         background-image: url(../img/corp-red.png);
       }
-      &.image5 {
+      &.image5{
         background-image: url(../img/veb-red.png);
       }
     }
@@ -170,61 +172,61 @@
       content: '➞';
       right: 25px;
       top: 15px;
-      font-family: "Gilroy Bold", sans-serif;
+      font-family: "Gilroy Bold",sans-serif;
       color: black;
-      font-size: 24px;
+      font-size:24px;
       transition: .2s;
 
     }
-    &:hover:after {
+    &:hover:after{
       color: $red;
     }
 
-    &:before {
+    &:before{
       display: none;
 
     }
 
   }
-  .slick-prev {
+  .slick-prev{
     left: -100px;
     &:after {
       transform: rotate(180deg);
     }
   }
-  .slick-next {
+  .slick-next{
     right: -110px;
   }
 
-  .content-box {
+
+  .content-box{
     position: relative;
-    .slider-shoise {
+    .slider-shoise{
       position: absolute;
-      margin: auto;
+      margin:auto;
       top: 50px;
       left: 0;
       right: 0;
       width: 85%;
 
-      .grey-box {
+      .grey-box{
         float: left;
-        width: 49%;
+        width: 50%;
 
-        & img {
+        & img{
           box-shadow: none;
           width: 100%;
         }
 
       }
-      .content-box {
+      .content-box{
         text-align: left;
         float: left;
         width: 50%;
-        height: auto;
-        padding: 38px 0 0 30px;
+        padding:20px 20px;
 
       }
-      button {
+      button{
         margin-right: 30px;
         width: 44%;
       }
@@ -233,14 +235,13 @@
   }
 
 }
-
 @media (max-width: 1400px) {
-  .servise {
+  .servise{
     height: 760px;
-    .button-tr {
+    .button-tr{
       color: black;
       border: 2px solid black;
-      &:before {
+      &:before{
         background-image: url(../img/play-black.png);
         left: 10px;
         transition: .3s;
@@ -248,13 +249,13 @@
         height: 20px;
 
       }
-      &:hover {
+      &:hover{
         background-color: $red;
         border: 2px solid $red;
         color: #FFFFFF;
 
       }
-      &:hover:before {
+      &:hover:before{
         background-image: url(../img/play.png);
         transition: .3s;
       }
@@ -277,50 +278,48 @@
     margin-top: -8px;
     float: left;
     width: 50%;
-    padding-top: 0;
+    padding-top:0;
   }
 }
-
 @media (max-width: 1200px) {
-  .servise {
+  .servise{
     height: 900px;
   }
   .servise .content-box .slider-shoise .grey-box {
     text-align: left;
-    margin: -20px auto 20px;
+    margin:-20px auto 20px;
     float: none;
     width: 60%;
-    padding-top: 0;
+    padding-top:0;
   }
   .servise .content-box .slider-shoise .content-box {
     text-align: center;
     margin-top: -8px;
     float: left;
     width: 100%;
-    padding-top: 0;
-    & p {
+    padding-top:0;
+    & p{
       text-align: left;
     }
   }
 }
-
 @media (max-width: 993px) {
-  .servise {
+  .servise{
     height: 970px;
   }
   .servise .content-box .slider-shoise .grey-box {
     text-align: left;
-    margin: -20px auto 20px;
+    margin:-20px auto 20px;
     float: none;
     width: 100%;
-    padding-top: 0;
+    padding-top:0;
   }
   .servise .content-box .slider-shoise .content-box {
     text-align: center;
     margin-top: -8px;
     float: left;
     width: 100%;
-    padding-top: 0;
+    padding-top:0;
   }
   .servise .slick-prev {
     left: 0;
@@ -329,36 +328,34 @@
     right: -50px;
   }
   .servise .content-box .slider-shoise button {
-    margin: 20px 10px;
+    margin:20px 10px;
 
     font-size: 20px;
   }
 }
-
 @media (max-width: 768px) {
-  .servise {
+  .servise{
     border-top: 4px solid $red;
   }
 }
-
 @media (max-width: 570px) {
 
-  .servise {
+  .servise{
     height: 950px;
   }
   .servise .content-box .slider-shoise .grey-box {
     text-align: left;
-    margin: -20px auto 20px;
+    margin:-20px auto 20px;
     float: none;
     width: 100%;
-    padding-top: 0;
+    padding-top:0;
   }
   .servise .content-box .slider-shoise .content-box {
     text-align: center;
     margin-top: -8px;
     float: left;
     width: 100%;
-    padding: 0;
+    padding:0;
   }
   .servise .slick-prev {
     left: 0;
@@ -367,63 +364,17 @@
     right: -50px;
   }
   .servise .content-box .slider-shoise button {
-    margin: 15px 10px;
+    margin:15px 10px;
     width: 200px;
 
     font-size: 20px;
   }
 }
-
 @media (max-width: 500px) {
-
   .servise .content-box .slider-shoise .serv {
     display: none;
   }
 }
-
-@media (max-width: 480px) {
-  .servise .slick-next {
-    right: -40px;
-  }
-  .servise .slick-prev {
-    left: 10px;
-  }
-  .servise .content-box .slider-shoise {
-    position: absolute;
-    margin: auto;
-    top: 50px;
-    left: 0;
-    right: 0;
-    width: 100%;
-  }
-  #radio11:checked ~ .marLeft .slider-nav-three .circle-image-box label[for=radio11] .circle-image, .servise #radio22:checked ~ .marLeft .slider-nav-three .circle-image-box label[for=radio22] .circle-image, .servise #radio33:checked ~ .marLeft .slider-nav-three .circle-image-box label[for=radio33] .circle-image, .servise #radio44:checked ~ .marLeft .slider-nav-three .circle-image-box label[for=radio44] .circle-image, .servise #radio55:checked ~ .marLeft .slider-nav-three .circle-image-box label[for=radio55] .circle-image, .servise #radio66:checked ~ .marLeft .slider-nav-three .circle-image-box label[for=radio66] .circle-image {
-    width: 100px;
-    height: 100px;
-
-  }
-  .servise #radio11:checked ~ .marLeft .slider-nav-three .circle-image-box label[for=radio11] .circle-image, .servise #radio22:checked ~ .marLeft .slider-nav-three .circle-image-box label[for=radio22] .circle-image, .servise #radio33:checked ~ .marLeft .slider-nav-three .circle-image-box label[for=radio33] .circle-image, .servise #radio44:checked ~ .marLeft .slider-nav-three .circle-image-box label[for=radio44] .circle-image, .servise #radio55:checked ~ .marLeft .slider-nav-three .circle-image-box label[for=radio55] .circle-image, .servise #radio66:checked ~ .marLeft .slider-nav-three .circle-image-box label[for=radio66] .circle-image {
-    width: 100px;
-    height: 100px;
-
-  }
-  .circle-image-box {
-    width: 131px;
-    height: 150px;
-
-  }
-  .servise .circle-image-box label {
-
-    font-size: 12px;
-
-  }
-  .circle-image-box .circle-image {
-    width: 85px;
-    height: 85px;
-
-  }
-
-}
-
 @media (max-width: 380px) {
   .servise {
     height: 1000px;
