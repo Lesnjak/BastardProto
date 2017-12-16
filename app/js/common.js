@@ -369,6 +369,18 @@ $(document).ready(function () {
 
             }
         });
+        $(' .popup-btn-agree2').click(function (e) {
+            var email = $('form #email-blog').val();
+            var regExp = email.match(/^[0-9a-z-\.]+\@[0-9a-z-]{2,}\.[a-z]{2,}$/i);
+            if (regExp) {
+                e.preventDefault();
+                $(' .popup-close-all').click();
+                $('.popup-wrap-agree-blog').fadeIn(250);
+                $('.popup-box-agree-blog').removeClass('transform-out').addClass('transform-in');
+
+
+            }
+        });
 
         $(' .popup-close-agree').click(function (e) {
             // var name= $('.form form #name').val();
@@ -512,7 +524,20 @@ $(document).ready(function () {
             cursorborderradius: 4,
             autohidemode: false
 
+
         });
+        if($(document).width()>993){
+            $("html").niceScroll({
+                cursorcolor: "grey",
+                cursorwidth: "8px",
+                cursorborder: "0px solid #5e90be",
+                cursorborderradius: 4,
+                autohidemode: false
+
+
+            });
+        }
+
 
         $(window).resize(function () {
             $(".scroll-box").getNiceScroll().resize();
