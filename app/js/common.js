@@ -62,6 +62,7 @@ $(document).ready(function () {
         var order = $('.order').offset().top - 900;
         var blog = $('.blog').offset().top - 900;
         var footer = $('.footer').offset().top - 900;
+        // var seven = $('.project-section-seven').offset().top - 900;
 
 
         var top = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
@@ -95,6 +96,9 @@ $(document).ready(function () {
         if (top > order) {
             $('.form').addClass('redLineVertical')
         }
+        // if (top > seven) {
+        //     $('.project-section-seven').addClass('redLine1')
+        // }
 
 
     });
@@ -477,6 +481,43 @@ $(document).ready(function () {
                 breakpoint: 768,
                 settings: {
                     slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2
+                }
+            }
+        ]
+
+    });
+    $('.slider-project').slick({
+        loop: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots:true,
+        speed: 500,
+        appendArrows: $('.buttons-block-proj'),
+        prevArrow:'<div id="prev"><span class="rotat">➞</span><span>Назад </span></div>',
+        nextArrow:'<div id="next"><span>Вперед </span><span>➞</span></div>',
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow:3
+                }
+            },
+            {
+                breakpoint: 993,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3
                 }
             },
             {
