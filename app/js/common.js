@@ -567,6 +567,18 @@ $(document).ready(function () {
 
 
         });
+          $('.tabs label').on('click',function () {
+              $(".scroll-box").niceScroll({
+                  cursorcolor: "#fff",
+                  cursorwidth: "7px",
+                  cursorborder: "0px solid #5e90be",
+                  cursorborderradius: 4,
+                  autohidemode: false
+
+
+              });
+          });
+
         if($(document).width()>993){
             $("html").niceScroll({
                 cursorcolor: "grey",

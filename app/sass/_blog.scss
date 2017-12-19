@@ -237,6 +237,14 @@
 }
 
 @media (max-width: 480px) {
+  .header-section-blog .filter .header .nameBlock p {
+    font-size: 17px;
+    line-height: 20px;
+  }
+  #blog-s {
+    height:91vh;
+    min-height: 200px;
+  }
   .blog h2 {
     margin-top: 23px;
     margin-bottom: 30px;
