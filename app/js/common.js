@@ -60,7 +60,7 @@ $(document).ready(function () {
         var clients = $('.clients').offset().top - 1000;
         var our = $('.our-works').offset().top - 900;
         var order = $('.order').offset().top - 900;
-        var blog = $('.blog').offset().top - 900;
+        var blog = $('.blog').offset().top -900;
         var footer = $('.footer').offset().top - 900;
         // var seven = $('.project-section-seven').offset().top - 900;
 
@@ -68,6 +68,9 @@ $(document).ready(function () {
         var top = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
         if (top > voises) {
             $('.voice-section').addClass('redLine')
+        }
+        if (top > blog) {
+            $('.blog').addClass('redLine1')
         }
 
         if (top > servises) {
