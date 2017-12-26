@@ -370,8 +370,8 @@ $(document).ready(function () {
             if (name && phone && regExp) {
                 e.preventDefault();
                 $(' .popup-close-all').click();
-                $('.popup-wrap-agree-head').fadeIn(250);
-                $('.popup-box-agree-head').removeClass('transform-out').addClass('transform-in');
+                $('.popup-wrap-agree').fadeIn(250);
+                $('.popup-box-agree').removeClass('transform-out').addClass('transform-in');
 
 
             }
@@ -388,13 +388,13 @@ $(document).ready(function () {
 
             }
         });
-        $(' .popup-btn-agree3').click(function (event) {
+        $(' .popup-btn-agree3').click(function (e) {
 
             var name = $('form #article-name').val();
             var email = $('form #article-email').val();
             var regExp = email.match(/^[0-9a-z-\.]+\@[0-9a-z-]{2,}\.[a-z]{2,}$/i);
             if (name && regExp) {
-                event.preventDefault();
+                e.preventDefault();
                 $('.popup-wrap-agree-blog-article').fadeIn(250);
                 $('.popup-box-agree-blog-article').removeClass('transform-out').addClass('transform-in');
 
@@ -403,24 +403,29 @@ $(document).ready(function () {
         });
 
         $(' .popup-close-agree').click(function (e) {
-            // var name= $('.form form #name').val();
-            // var phone= $('.form form #phone').val();
-            // var email= $('.form form #email').val();
             $('input[type="text"]').val('');
             $('input[type="number"]').val('');
             $('input[type="email"]').val('');
             $('.popup-wrap-agree').fadeOut(500);
             $('.popup-box-agree').removeClass('transform-in').addClass('transform-out');
+            $('.popup-wrap-agree-blog-article').fadeOut(500);
+            $('.popup-box-agree-blog-article').removeClass('transform-in').addClass('transform-out');
+            $('.popup-wrap-agree-blog').fadeOut(500);
+            $('.popup-box-agree-blog').removeClass('transform-in').addClass('transform-out');
+
+
 
             e.preventDefault();
         });
         $('.popup-close-all').click(function (e) {
-
             $('input[type="text"]').val('');
             $('input[type="number"]').val('');
             $('input[type="email"]').val('');
 
         });
+        $('.popup-wrap-agree-blog, popup-wrap-agree, .popup-wrap-agree-blog-article').on('click',function () {
+            $('.popup-close-agree').click();
+        })
 
     });
 
@@ -485,7 +490,7 @@ $(document).ready(function () {
 
     });
 ////////////////////////////////////////////slider servises////////////////////////
-    $('.slider-nav-three').slick({
+    $('.slider-nav-six').slick({
         loop: true,
         slidesToShow: 5,
         slidesToScroll: 1,
@@ -513,6 +518,39 @@ $(document).ready(function () {
                 breakpoint: 480,
                 settings: {
                     slidesToShow: 2
+                }
+            }
+        ]
+
+    });
+    $('.slider-nav-five').slick({
+        loop: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        speed: 500,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 993,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1
                 }
             }
         ]

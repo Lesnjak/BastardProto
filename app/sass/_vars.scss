@@ -738,15 +738,14 @@ h5 {
 
 ////////////////////////popup-menu-agree////////////////////////////////////////
 
-.popup-wrap-agree {
-  width: 100%;
-  height: 100%;
+.popup-wrap-agree{
   display: none;
   position: fixed;
   z-index: 9000;
   top: 0;
   left: 0;
-  content: '';
+  bottom: 0;
+  right: 0;
   background: rgba(0, 0, 0, .8);
 
   .popup-box-agree {
@@ -755,57 +754,47 @@ h5 {
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 1150px;
+    height: 516px;
     border-radius: 3px;
     text-align: center;
-    .test {
-      height: 100vh;
-      text-align: center;
 
-      .agree-box {
-        border-radius: 20px;
-        position: relative;
-        width: 70%;
-        height: 500px;
-        background-color: #fff;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        margin: 250px auto;
-        .close-btn {
-          position: absolute;
-          right: 20px;
-          top: 30px;
-          transform: translateX(-50%);
-        }
-        .knife-box {
-          position: absolute;
-          width: 35%;
-          left: 0;
-          top: -122px;
-          img {
-            width: 100%;
-          }
-
-        }
-        .agree-content-box {
-          text-align: left;
-          position: absolute;
-          width: 50%;
-          height: 50%;
-          margin: auto;
-          right: 120px;
-          top: 0;
-          bottom: 0;
-          p {
-            font-size: 16px;
-            font-weight: bold;
-          }
+    .agree-box {
+      border-radius: 20px;
+      width: 100%;
+      height: inherit;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 20px 0;
+      .close-btn {
+        position: absolute;
+        right: 20px;
+        top: 30px;
+        transform: translateX(-50%);
+      }
+      .knife-box {
+        width: 31%;
+        margin-left: -80px;
+        margin-top: -70px;
+        img {
+          width: 100%;
         }
 
       }
+      .agree-content-box {
+        text-align: left;
+        width: 50%;
+        margin-left: 150px;
+
+        p {
+          font-size: 16px;
+          font-weight: bold;
+        }
+      }
 
     }
+
   }
   /////////////////////////////popup- order/////////////////////////
 
@@ -822,68 +811,279 @@ h5 {
     transform: translate(-50%, -50%) scale(0.5);
   }
 }
-
 @media (max-width: 1400px) {
-  .popup-wrap-agree .popup-box-agree .test .agree-box {
-    width: 70%;
-    height: 400px;
-    margin: 150px auto;
-  }
-  .popup-wrap-agree .popup-box-agree .test .agree-box .agree-content-box {
-    width: 50%;
-    height: 80%;
-    margin: auto;
-    right: 120px;
-    top: 0;
-    bottom: 0;
-  }
-  .popup-wrap-agree .popup-box-agree .test .agree-box .knife-box {
-    position: absolute;
-    width: 35%;
-    left: 0;
-    top: -75px;
-  }
-}
+  .popup-wrap-agree{
+    .popup-box-agree {
+      width: 800px;
+      height: 450px;
+      .agree-box {
+        .close-btn {
+        }
+        .knife-box {
+          width: 40%;
+          margin-left: -80px;
+          margin-top: -79px;
+          img {
+            width: 100%;
+          }
 
-@media (max-width: 1200px) {
-  .popup-wrap-agree .popup-box-agree .test .agree-box {
-    width: 70%;
-    height: 400px;
-    margin: 150px auto;
-  }
-  .popup-wrap-agree .popup-box-agree .test .agree-box .agree-content-box {
-    width: 50%;
-    height: 80%;
-    margin: auto;
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-  }
-  .popup-wrap-agree .popup-box-agree .test .agree-box .knife-box {
-    display: none;
-  }
-}
+        }
+        .agree-content-box {
+          text-align: left;
+          width: 50%;
+          margin-left: 50px;
 
+          p {
+            font-size: 16px;
+            font-weight: bold;
+          }
+        }
+
+      }
+
+    }
+    /////////////////////////////popup- order/////////////////////////
+
+    .transform-in, .transform-out {
+
+      transition: all ease 0.5s;
+    }
+
+    .transform-in {
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    .transform-out {
+      transform: translate(-50%, -50%) scale(0.5);
+    }
+  }
+
+
+}
+@media (max-width: 993px) {
+  .popup-wrap-agree{
+    .popup-box-agree {
+      width: 600px;
+      height: 350px;
+      .agree-box {
+
+        .close-btn {
+          width: 25px;
+          height: 25px;
+
+          right: 10px;
+          top: 20px;
+          transform: translateX(-50%);
+          img{
+            width: 100%;
+          }
+        }
+        .knife-box {
+          width: 40%;
+          margin-left: -40px;
+          margin-top: -47px;
+          img {
+            width: 100%;
+          }
+
+        }
+        .agree-content-box {
+          text-align: left;
+          width: 50%;
+          margin-left: 40px;
+
+          p {
+            font-size: 16px;
+            font-weight: bold;
+          }
+        }
+
+      }
+
+    }
+    /////////////////////////////popup- order/////////////////////////
+
+    .transform-in, .transform-out {
+
+      transition: all ease 0.5s;
+    }
+
+    .transform-in {
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    .transform-out {
+      transform: translate(-50%, -50%) scale(0.5);
+    }
+  }
+
+
+}
 @media (max-width: 768px) {
-  .popup-wrap-agree .popup-box-agree .test .agree-box {
-    width: 360px;
-    height: 400px;
-    margin: 150px auto;
-  }
-  .popup-wrap-agree .popup-box-agree .test .agree-box .agree-content-box {
-    width: 80%;
-    height: 70%;
-    margin: auto;
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-  }
-  .popup-wrap-agree .popup-box-agree .test .agree-box .knife-box {
+  .popup-wrap-agree{
+    width: 100%;
+    height: 100%;
     display: none;
+    position: fixed;
+    z-index: 9000;
+    top: 0;
+    left: 0;
+    content: '';
+    background: rgba(0, 0, 0, .8);
+
+    .popup-box-agree {
+
+      transform: translate(-50%, -50%) scale(0.5);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 450px;
+      height: 350px;
+      border-radius: 3px;
+      text-align: center;
+
+      .agree-box {
+        border-radius: 20px;
+        width: 100%;
+        height: inherit;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        .close-btn {
+          width: 25px;
+          height: 25px;
+          position: absolute;
+          right: 10px;
+          top: 20px;
+          transform: translateX(-50%);
+          img{
+            width: 100%;
+          }
+        }
+        .knife-box {
+          display: none;
+          width: 43%;
+          margin-left: -40px;
+          img {
+            width: 100%;
+          }
+
+        }
+        .agree-content-box {
+          text-align: left;
+          width: 80%;
+          margin: 0 auto;
+
+          p {
+            font-size: 16px;
+            font-weight: bold;
+          }
+        }
+
+      }
+
+    }
+    /////////////////////////////popup- order/////////////////////////
+
+    .transform-in, .transform-out {
+
+      transition: all ease 0.5s;
+    }
+
+    .transform-in {
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    .transform-out {
+      transform: translate(-50%, -50%) scale(0.5);
+    }
   }
+
+
 }
+@media (max-width: 480px) {
+  .popup-wrap-agree{
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    z-index: 9000;
+    top: 0;
+    left: 0;
+    content: '';
+    background: rgba(0, 0, 0, .8);
+
+    .popup-box-agree {
+
+      transform: translate(-50%, -50%) scale(0.5);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 360px;
+      height: 390px;
+      border-radius: 3px;
+      text-align: center;
+
+      .agree-box {
+        border-radius: 20px;
+        width: 100%;
+        height: inherit;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        .close-btn {
+          width: 25px;
+          height: 25px;
+          position: absolute;
+          right: 10px;
+          top: 20px;
+          transform: translateX(-50%);
+          img{
+            width: 100%;
+          }
+        }
+        .knife-box {
+          display: none;
+          width: 43%;
+          margin-left: -40px;
+          img {
+            width: 100%;
+          }
+
+        }
+        .agree-content-box {
+          text-align: center;
+          width: 90%;
+          margin: 0 auto;
+
+          p {
+            font-size: 16px;
+            font-weight: bold;
+          }
+        }
+
+      }
+
+    }
+    /////////////////////////////popup- order/////////////////////////
+
+    .transform-in, .transform-out {
+
+      transition: all ease 0.5s;
+    }
+
+    .transform-in {
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    .transform-out {
+      transform: translate(-50%, -50%) scale(0.5);
+    }
+  }
+
+
+}
+
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
