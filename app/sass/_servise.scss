@@ -43,6 +43,22 @@
 
   }
   .circle-image-box{
+    label{
+      position: relative;
+      display: block;
+      height: 180px;
+      .new-p{
+        position: absolute;
+        top: 135px;
+        color: #000;
+        font-size: 18px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        transition: .3s;
+        width: 170px;
+      }
+    }
 
     .circle-image{
       transition: all .3s;
@@ -50,7 +66,7 @@
       position: absolute;
       left: 0;
       right: 0;
-      bottom: 35px;
+     bottom: 50px;
       margin: auto;
       &.image1{
         background-image: url(../img/lending.png);
@@ -66,6 +82,9 @@
       }
       &.image5{
         background-image: url(../img/s-veb.png);
+      }
+      &.image6{
+        background-image: url(../img/mobile-black.png);
       }
     }
     label{
@@ -84,8 +103,16 @@
 
     }
     &:hover{
-      label{
+      .new-p{
+        position: absolute;
+        top: 135px;
         color: $red;
+        font-size: 18px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        transition: .3s;
+        width: 170px;
       }
       .circle-image{
         width: 130px;
@@ -109,6 +136,9 @@
         &.image5{
           background-image: url(../img/veb-red.png);
         }
+        &.image6{
+          background-image: url(../img/red7.png);
+        }
       }
     }
 
@@ -129,6 +159,7 @@
   #radio44:checked ~.row .content-box .content4 .slider-shoise,
   #radio55:checked ~.row .content-box .content5 .slider-shoise,
   #radio66:checked ~.row .content-box .content6 .slider-shoise
+
   {
     z-index: 100;
     opacity: 1;
@@ -139,6 +170,7 @@
   #radio44:checked ~.marLeft .slider-nav-three .circle-image-box label[for='radio44'],
   #radio55:checked ~.marLeft .slider-nav-three .circle-image-box label[for='radio55'],
   #radio66:checked ~.marLeft .slider-nav-three .circle-image-box label[for='radio66']
+
   {
     color: $red;
     & .circle-image{
@@ -163,6 +195,12 @@
       &.image5{
         background-image: url(../img/veb-red.png);
       }
+      &.image6{
+        background-image: url(../img/red7.png);
+      }
+    }
+    & .new-p{
+      color: $red;
     }
   }
   .slick-prev, .slick-next {
