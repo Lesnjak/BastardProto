@@ -331,11 +331,43 @@ height: auto;
         text-align: left;
         position: relative;
         padding: 90px 25px;
-        border-top: 5px solid #dcdcdc;
-        border-right: 5px solid #dcdcdc;
-        border-bottom: 5px solid #dcdcdc;
+        //border-top: 5px solid #dcdcdc;
+        //border-right: 5px solid #dcdcdc;
+        //border-bottom: 5px solid #dcdcdc;
         top: 50%;
         transform:translateY(-50%);
+      }
+      .show-grey-lines-right{
+        position: relative;
+        &:before{
+          position: absolute;
+          content: '';
+          height: 5px;
+          width: 100%;
+          background-color: #dcdcdc;
+          right: 0;
+          top: -5px;
+          animation: moveGrey 3s ;
+        }
+        &:after{
+          position: absolute;
+          content: '';
+          height: 5px;
+          width: 100%;
+          background-color: #dcdcdc;
+          left: 0;
+          bottom: -5px;
+          animation: moveGrey 3s ;
+        }
+        .grey-line-show{
+          position: absolute;
+          width: 5px;
+          height: 100%;
+          right: 0;
+          top: 0;
+          background-color: #dcdcdc;
+          animation: moveGreyH 3s ;
+        }
       }
     }
   }
@@ -367,9 +399,6 @@ height: auto;
           text-align: left;
           position: relative;
           padding: 30px 25px;
-          border-top: 5px solid #dcdcdc;
-          border-right: 5px solid #dcdcdc;
-          border-bottom: 5px solid #dcdcdc;
           top: 50%;
           transform:translateY(-50%);
         }
@@ -380,6 +409,46 @@ height: auto;
   
 }
 @media (max-width: 1200px) {
+  .about-us-studio{
+    height: auto;
+    padding: 70px 0;
+    &:before{
+      display: none;
+    }
+    h2{
+      margin: 0 0 20px;
+    }
+    .studio-container{
+      display: flex;
+      .studio-img{
+        padding: 90px 40px;
+        background-color: #dcdcdc;
+        width: 30%;
+        img{
+          width: 100%;
+          height: auto;
+        }
+      }
+      .studio-content{
+        width: 70%;
+        height: inherit;
+        .studio-grey{
+          text-align: left;
+          position: relative;
+          padding: 10px 25px;
+          //border-top: 5px solid #dcdcdc;
+          //border-right: 5px solid #dcdcdc;
+          //border-bottom: 5px solid #dcdcdc;
+          top: 50%;
+          transform:translateY(-50%);
+        }
+      }
+    }
+
+  }
+
+}
+@media (max-width: 993px) {
   .about-us-studio{
     height: auto;
     padding: 70px 0;

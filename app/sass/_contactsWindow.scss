@@ -29,7 +29,8 @@
 
   }
   .unregularWord{
-    margin-bottom: 3px;
+    position: relative;
+    top: -3px;
   }
   .social-grey-box{
     margin-top: -15px;
@@ -50,6 +51,26 @@
       }
 
     }
+  }
+  .show-grey-lines-right{
+    position: relative;
+    animation:slow 2s ;
+
+
+
+  }
+  @keyframes slow {
+    0%{
+      border: 2px solid #878787 ;
+    }
+    50%{
+      border:2px solid $red ;
+      box-shadow: 0 0 30px $red;
+    }
+    100%{
+      border: 2px solid #878787 ;
+    }
+
   }
   .social-phones{
     display: flex;
