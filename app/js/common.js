@@ -53,13 +53,7 @@ $(document).ready(function () {
 
 
 ///////////////////////////////////////////line animate//////////////////////////////////
-    $(document).scroll(function () {
-        var order = $('.order').offset().top - 700;
-        var top = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
-        if (top > order) {
-            $('.form').addClass('redLineVertical')
-        }
-    });
+
 //////////////////////////////////////////video backgr///////////////////////////
     $(document).on('input', ':input', function () {
         var input = $(this);
@@ -292,6 +286,7 @@ $(document).ready(function () {
 
 //////////////////////////////popup///////////////////////////////
     $(document).ready(function () {
+
         $(' .popup-btn').click(function (e) {
             $('.popup-wrap').fadeIn(250);
             $('.popup-box').removeClass('transform-out').addClass('transform-in');
@@ -327,6 +322,17 @@ $(document).ready(function () {
                 $(' .popup-close-all').click();
                 $('.popup-wrap-agree').fadeIn(250);
                 $('.popup-box-agree').removeClass('transform-out').addClass('transform-in');
+
+
+            }
+        });
+        $(' .liave-click').click(function (e) {
+            var name = $('.leave-form .name').val();
+            var email = $('.leave-form .email').val();
+            var regExp = email.match(/^[0-9a-z-\.]+\@[0-9a-z-]{2,}\.[a-z]{2,}$/i);
+            if (name && regExp) {
+                e.preventDefault();
+                $(' .popup-close-agree').click();
 
 
             }
@@ -367,10 +373,12 @@ $(document).ready(function () {
             $('.popup-box-agree-blog-article').removeClass('transform-in').addClass('transform-out');
             $('.popup-wrap-agree-blog').fadeOut(500);
             $('.popup-box-agree-blog').removeClass('transform-in').addClass('transform-out');
+            $('.popup-wrap-agree-leave').fadeOut(500);
+            $('.popup-box-agree-leave').removeClass('transform-in').addClass('transform-out');
 
 
 
-            e.preventDefault();
+           return false;
         });
         $('.popup-close-all').click(function (e) {
             $('input[type="text"]').val('');
@@ -380,8 +388,13 @@ $(document).ready(function () {
         });
         $('.popup-wrap-agree-blog, popup-wrap-agree, .popup-wrap-agree-blog-article').on('click',function () {
             $('.popup-close-agree').click();
-        })
-
+        });
+        if($(document).width()>993){
+        $(document).mouseleave(function(){
+            $('.popup-wrap-agree-leave').fadeIn(250);
+            $('.popup-box-agree-leave').removeClass('transform-out').addClass('transform-in');
+        });
+        }
     });
 
 
@@ -694,6 +707,14 @@ $(window).scroll(function() {
 
             }
         });
+        $('.social-grey-text').each(function(){
+            var imagePos = $(this).offset().top;
+            var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow+600) {
+                $(this).addClass('social-grey-text1');
+
+            }
+        });
         $('.redBlack').each(function(){
             var imagePos = $(this).offset().top;
             var topOfWindow = $(window).scrollTop();
@@ -708,17 +729,25 @@ $(window).scroll(function() {
     $('.show-Line-right').each(function(){
         var imagePos = $(this).offset().top;
         var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow + 700) {
+        if (imagePos < topOfWindow + 900) {
             $(this).addClass('redLine');
         }
     });
     $('.show-Line-left').each(function(){
         var imagePos = $(this).offset().top;
         var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow + 700) {
+        if (imagePos < topOfWindow + 900) {
             $(this).addClass('redLine1');
         }
     });
+    $('.order').each(function(){
+        var imagePos = $(this).offset().top;
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow + 900) {
+            $('.form').addClass('redLineVertical');
+        }
+    });
+
 });
 
 

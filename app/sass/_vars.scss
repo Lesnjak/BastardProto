@@ -1083,6 +1083,480 @@ h5 {
 
 
 }
+.popup-wrap-agree-leave{
+  display: none;
+  position: fixed;
+  z-index: 9000;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, .8);
+
+  .popup-box-agree-leave {
+
+    transform: translate(-50%, -50%) scale(0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1000px;
+    height: auto;
+    border-radius: 3px;
+    text-align: center;
+    .agree-box {
+      border-radius: 20px;
+      width: 100%;
+      height: inherit;
+      background-image: url("../img/leave-bg.png");
+      background-size:cover ;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      padding: 80px ;
+      .close-btn {
+        position: absolute;
+        right: 20px;
+        top: 30px;
+        transform: translateX(-50%);
+      }
+      .knife-box {
+        width: 45%;
+
+        img {
+          width: 100%;
+        }
+
+      }
+      .agree-content-box {
+        text-align: left;
+        width: 50%;
+        margin-left: 50px;
+h3{
+  color: #FFFFFF;
+  font-size: 30px;
+  margin: 0;
+}
+        .pmiddle {
+          font-size: 24px;
+          color: #FFFFFF;
+          margin: 5px 0;
+        }
+        .small {
+          font-size: 18px;
+          color: #FFFFFF;
+          margin: 5px 0;
+        }
+        form{
+          width: 339px;
+          input[type='text']{
+            width: 100%;
+            height: 45px;
+            border-radius: 23px;
+            padding: 0 35px;
+            font-size:18px;
+            font-family: "Gilroy Medium",sans-serif;
+            color: #000;
+            outline: none;
+            border: none;
+            margin-top: 20px;
+          }
+          input::placeholder{
+            color: #9d9797;
+          }
+          input[type='submit']{
+            width: 100%;
+            height: 45px;
+            border-radius: 23px;
+            padding: 0 35px;
+            font-size:24px;
+            font-family: "Gilroy Medium",sans-serif;
+            color: #fff;
+            outline: none;
+            border: none;
+            margin-top: 20px;
+            background-color: $red;
+            transition: .3s;
+            &:hover{
+              background-color: #fff;
+              color: black;
+            }
+          }
+
+        }
+      }
+
+    }
+
+  }
+  /////////////////////////////popup- order/////////////////////////
+
+  .transform-in, .transform-out {
+
+    transition: all ease 0.5s;
+  }
+
+  .transform-in {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .transform-out {
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+}
+@media (max-width: 1400px) {
+  .popup-wrap-agree-leave{
+    .popup-box-agree-leave {
+      width: 800px;
+      height: 650px;
+      .agree-box {
+        .close-btn {
+        }
+        .knife-box {
+          width: 40%;
+          img {
+            width: 100%;
+          }
+
+        }
+        .agree-content-box {
+          text-align: left;
+          width: 50%;
+          margin-left: 50px;
+
+          p {
+            font-size: 16px;
+            font-weight: bold;
+          }
+        }
+
+      }
+
+    }
+    /////////////////////////////popup- order/////////////////////////
+
+    .transform-in, .transform-out {
+
+      transition: all ease 0.5s;
+    }
+
+    .transform-in {
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    .transform-out {
+      transform: translate(-50%, -50%) scale(0.5);
+    }
+  }
+
+
+}
+@media (max-width: 993px) {
+  .popup-wrap-agree-leave{
+    .popup-box-agree-leave {
+      width: 600px;
+      height: 450px;
+      .agree-box {
+
+        .close-btn {
+          width: 25px;
+          height: 25px;
+
+          right: 10px;
+          top: 20px;
+          transform: translateX(-50%);
+          img{
+            width: 100%;
+          }
+        }
+        .knife-box {
+          width: 40%;
+         display: none;
+
+        }
+        .agree-content-box {
+          text-align: left;
+          width: 100%;
+          margin-left: 40px;
+          h3{
+            color: #FFFFFF;
+            font-size: 24px;
+            margin: 0;
+          }
+          .pmiddle {
+            font-size: 20px;
+            color: #FFFFFF;
+            margin: 5px 0;
+          }
+          .small {
+            font-size: 17px;
+            color: #FFFFFF;
+            margin: 5px 0;
+          }
+          form{
+            width: 339px;
+            input[type='text']{
+              width: 100%;
+              height: 45px;
+              border-radius: 23px;
+              padding: 0 35px;
+              font-size:18px;
+              font-family: "Gilroy Medium",sans-serif;
+              color: #000;
+              outline: none;
+              border: none;
+              margin-top: 20px;
+            }
+            input::placeholder{
+              color: #9d9797;
+            }
+            input[type='submit']{
+              width: 100%;
+              height: 45px;
+              border-radius: 23px;
+              padding: 0 35px;
+              font-size:24px;
+              font-family: "Gilroy Medium",sans-serif;
+              color: #fff;
+              outline: none;
+              border: none;
+              margin-top: 20px;
+              background-color: $red;
+              transition: .3s;
+              &:hover{
+                background-color: #fff;
+                color: black;
+              }
+            }
+
+          }
+        }
+
+      }
+
+    }
+    /////////////////////////////popup- order/////////////////////////
+
+    .transform-in, .transform-out {
+
+      transition: all ease 0.5s;
+    }
+
+    .transform-in {
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    .transform-out {
+      transform: translate(-50%, -50%) scale(0.5);
+    }
+  }
+
+
+}
+@media (max-width: 768px) {
+  .popup-wrap-agree-leave{
+    .popup-box-agree-leave {
+      width: 450px;
+      height: 450px;
+      .agree-box {
+        padding: 5px;
+        .close-btn {
+          width: 25px;
+          height: 25px;
+
+          right: 10px;
+          top: 20px;
+          transform: translateX(-50%);
+          img{
+            width: 100%;
+          }
+        }
+        .knife-box {
+          width: 40%;
+          display: none;
+
+        }
+        .agree-content-box {
+          text-align: left;
+          width: 100%;
+          margin-left: 40px;
+          h3{
+            color: #FFFFFF;
+            font-size: 24px;
+            margin: 0;
+          }
+          .pmiddle {
+            font-size: 20px;
+            color: #FFFFFF;
+            margin: 5px 0;
+          }
+          .small {
+            font-size: 17px;
+            color: #FFFFFF;
+            margin: 5px 0;
+          }
+          form{
+            width: 339px;
+            input[type='text']{
+              width: 100%;
+              height: 45px;
+              border-radius: 23px;
+              padding: 0 35px;
+              font-size:18px;
+              font-family: "Gilroy Medium",sans-serif;
+              color: #000;
+              outline: none;
+              border: none;
+              margin-top: 20px;
+            }
+            input::placeholder{
+              color: #9d9797;
+            }
+            input[type='submit']{
+              width: 100%;
+              height: 45px;
+              border-radius: 23px;
+              padding: 0 35px;
+              font-size:24px;
+              font-family: "Gilroy Medium",sans-serif;
+              color: #fff;
+              outline: none;
+              border: none;
+              margin-top: 20px;
+              background-color: $red;
+              transition: .3s;
+              &:hover{
+                background-color: #fff;
+                color: black;
+              }
+            }
+
+          }
+        }
+
+      }
+
+    }
+    /////////////////////////////popup- order/////////////////////////
+
+    .transform-in, .transform-out {
+
+      transition: all ease 0.5s;
+    }
+
+    .transform-in {
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    .transform-out {
+      transform: translate(-50%, -50%) scale(0.5);
+    }
+  }
+
+
+}
+@media (max-width: 480px) {
+  .popup-wrap-agree-leave{
+
+    .popup-box-agree-leave {
+      width: 340px;
+      height: 550px;
+      .agree-box {
+        padding: 5px;
+        .close-btn {
+          width: 25px;
+          height: 25px;
+
+          right: 10px;
+          top: 20px;
+          transform: translateX(-50%);
+          img{
+            width: 100%;
+          }
+        }
+        .knife-box {
+          width: 40%;
+          display: none;
+
+        }
+        .agree-content-box {
+          text-align: left;
+          width: 100%;
+          margin-left: 10px;
+          h3{
+            color: #FFFFFF;
+            font-size: 24px;
+            margin: 0;
+          }
+          .pmiddle {
+            font-size: 20px;
+            color: #FFFFFF;
+            margin: 5px 0;
+          }
+          .small {
+            font-size: 17px;
+            color: #FFFFFF;
+            margin: 5px 0;
+          }
+          form{
+            width: 310px;
+            input[type='text']{
+              width: 100%;
+              height: 45px;
+              border-radius: 23px;
+              padding: 0 35px;
+              font-size:18px;
+              font-family: "Gilroy Medium",sans-serif;
+              color: #000;
+              outline: none;
+              border: none;
+              margin-top: 20px;
+            }
+            input::placeholder{
+              color: #9d9797;
+            }
+            input[type='submit']{
+              width: 100%;
+              height: 45px;
+              border-radius: 23px;
+              padding: 0 35px;
+              font-size:24px;
+              font-family: "Gilroy Medium",sans-serif;
+              color: #fff;
+              outline: none;
+              border: none;
+              margin-top: 20px;
+              background-color: $red;
+              transition: .3s;
+              &:hover{
+                background-color: #fff;
+                color: black;
+              }
+            }
+
+          }
+        }
+
+      }
+
+    }
+    /////////////////////////////popup- order/////////////////////////
+
+    .transform-in, .transform-out {
+
+      transition: all ease 0.5s;
+    }
+
+    .transform-in {
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    .transform-out {
+      transform: translate(-50%, -50%) scale(0.5);
+    }
+  }
+
+
+}
 
 
 input::-webkit-outer-spin-button,

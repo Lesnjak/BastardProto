@@ -27,7 +27,25 @@
     margin: 0;
     text-transform: uppercase;
 
+
   }
+  .social-grey-text1{
+    animation: slowred 2s ;
+  }
+  @keyframes slowred {
+    0%{
+      color: #878787 ;
+    }
+    50%{
+      color: $red;
+      text-shadow: 0 0 2px $red;
+    }
+    100%{
+      color: #878787 ;
+    }
+
+  }
+
   .unregularWord{
     position: relative;
     top: -3px;
@@ -58,20 +76,23 @@
 
 
 
+
   }
+
   @keyframes slow {
     0%{
       border: 2px solid #878787 ;
     }
     50%{
       border:2px solid $red ;
-      box-shadow: 0 0 30px $red;
+      box-shadow: 0 0 5px $red;
     }
     100%{
       border: 2px solid #878787 ;
     }
 
   }
+
   .social-phones{
     display: flex;
     flex-direction: column;
@@ -149,10 +170,25 @@
 
 }
 .header-contacts .filter .header .nameBlock {
-    top: 55%;
+    top: 63%;
   }
 .header-section-blog-article .filter .header .nameBlock {
   top: 56%;
+}
+.header-about-us .filter .header .nameBlock {
+  top: 58%;
+}
+.header-section-blog .filter .header .nameBlock {
+  top: 58%;
+}
+.header-project .filter .header .nameBlock {
+  top: 56%;
+}
+.header-section-prototype .filter .header .nameBlock {
+  top: 56%;
+}
+#blog-c{
+  height: 600px;
 }
 @keyframes bottomLineContacts {
   0% {
@@ -170,7 +206,9 @@
   .header-contacts .filter .header .nameBlock {
     top: 60%;
   }
-  
+  .header-contacts .filter .header .nameBlock {
+    top: 63%;
+  }
 }
 @media (max-width: 993px) {
   .header-section-portfolio {
@@ -182,7 +220,7 @@
 
   }
   .header-contacts .filter .header .nameBlock {
-    top: 60%;
+    top: 65%;
   }
   .header-contacts .filter .header .nameBlock .lineBox h1 {
     display: inline-block;
@@ -202,14 +240,11 @@
 
 @media (max-width: 768px) {
   .header-contacts {
-    height: 500px;
+    height: 450px;
 
   }
-  .header-contacts .filter .header .nameBlock {
-    top: 65%;
-  }
   .header-section-portfolio .filter .header .nameBlock {
-    top: 60%;
+    top: 56%;
   }
   //.header-section-blog-article .filter .header .nameBlock {
   //  top: 60%;
@@ -233,11 +268,25 @@
     animation: bottomLineContacts 0;
 
   }
+  .header-section-blog-article .filter .header .nameBlock {
+    top: 64%;
+  }
+  .header-contacts .filter .header .nameBlock {
+    top: 65%;
+  }
 }
 @media (max-width: 480px) {
-
+  .header-section-prototype {
+    height: 476px;
+  }
+  .header-section-portfolio .filter .header .nameBlock {
+    top: 59%;
+  }
+#blog-po{
+  height: 450px;
+}
   .header-contacts .filter .header .nameBlock {
-    top: 67%;
+    top: 72%;
   }
 
   .header-contacts .filter .header .nameBlock .lineBox h1 {
@@ -253,6 +302,9 @@
     width: 26%;
     animation: bottomLineContacts 0;
 
+  }
+  #blog-c{
+    height: 400px;
   }
 }
 .order-contacts {
@@ -275,6 +327,7 @@
     background-image: url(../img/backgroundOrder2.png);
     background-size: cover;
   }
+
 }
 @media (max-width: 993px) {
   .order-contacts .back-left {
@@ -304,3 +357,4 @@
   }
 
 }
+

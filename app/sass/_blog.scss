@@ -234,6 +234,10 @@
     margin-top: 0;
     margin-bottom: 30px;
   }
+  #blog-s {
+    height:500px;
+    min-height: 200px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -242,7 +246,7 @@
     line-height: 20px;
   }
   #blog-s {
-    height:68vh;
+    height:450px;
     min-height: 200px;
   }
   .blog h2 {

@@ -775,6 +775,26 @@ color: $red;
 
   }
 }
+.servise-servise .filter .header .nameBlock .lineBox  {
+  .lineAnimate1{
+    &:before{
+animation: bottomLine 3s;
+    }
+    &:after{
+      animation: bottomLine 3s;
+    }
+
+  }
+  @keyframes bottomLine {
+    0%{
+      width: 0;
+    }
+    100%{
+      width: 19%;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .service-service-content .main-block .main-content .main-content-block .button-trr, .service-service-content .main-block-right .main-content .main-content-block .button-trr{
     display: none;
@@ -795,6 +815,18 @@ color: $red;
   } .servise-servise .filter .header .nameBlock .lineBox .lineAnimate1:after {
       width: 12%;
     }
+  .servise-servise .filter .header .nameBlock .lineBox  {
+    .lineAnimate1{
+      &:before{
+        animation: bottomLine 0s;
+      }
+      &:after{
+        animation: bottomLine 0s;
+      }
+
+    }
+
+  }
 }
 @media (max-width:480px ) {
   .servise-servise .filter .header .nameBlock .lineBox h1 {
