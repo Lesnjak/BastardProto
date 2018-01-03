@@ -80,7 +80,7 @@ $(document).ready(function () {
         // });
 
     }
-    console.log($(window).width());
+
 
     $('.menu-button').on('click', function () {
         // $('body').css('overflow','hidden');
@@ -389,10 +389,19 @@ $(document).ready(function () {
         $('.popup-wrap-agree-blog, popup-wrap-agree, .popup-wrap-agree-blog-article').on('click',function () {
             $('.popup-close-agree').click();
         });
-        if($(document).width()>993){
+
+        var oneMoreShow=84;
+        if($(document).width()>993 ){
         $(document).mouseleave(function(){
+            function fr() {
+                return oneMoreShow++;
+            }
+
+            if(oneMoreShow==84){
             $('.popup-wrap-agree-leave').fadeIn(250);
             $('.popup-box-agree-leave').removeClass('transform-out').addClass('transform-in');
+            fr();
+            }
         });
         }
     });
