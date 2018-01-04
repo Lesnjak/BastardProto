@@ -37,7 +37,7 @@
       <file leaf-file-name="services.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/services.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
+            <state relative-caret-position="19">
               <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
@@ -47,8 +47,8 @@
       <file leaf-file-name="blog.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/blog.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4009">
-              <caret line="211" column="10" lean-forward="false" selection-start-line="211" selection-start-column="10" selection-end-line="211" selection-end-column="10" />
+            <state relative-caret-position="114">
+              <caret line="216" column="23" lean-forward="false" selection-start-line="216" selection-start-column="23" selection-end-line="216" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -57,10 +57,10 @@
       <file leaf-file-name="common.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="403" column="13" lean-forward="false" selection-start-line="403" selection-start-column="13" selection-end-line="403" selection-end-column="13" />
+            <state relative-caret-position="204">
+              <caret line="395" column="50" lean-forward="false" selection-start-line="395" selection-start-column="50" selection-end-line="395" selection-end-column="50" />
               <folding>
-                <marker date="1515000104751" expanded="true" signature="23016:23019" ph="..." />
+                <marker date="1515093827136" expanded="true" signature="23131:23134" ph="..." />
               </folding>
             </state>
           </provider>
@@ -264,8 +264,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -294,6 +292,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -412,7 +412,8 @@
       <workItem from="1514637760628" duration="14738000" />
       <workItem from="1514665880101" duration="64000" />
       <workItem from="1514708226756" duration="29216000" />
-      <workItem from="1514997013271" duration="2592000" />
+      <workItem from="1514997013271" duration="3468000" />
+      <workItem from="1515092218085" duration="1595000" />
     </task>
     <task id="LOCAL-00001" summary="new1">
       <created>1510086949418</created>
@@ -670,14 +671,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="818572000" />
+    <option name="totallyTimeSpent" value="821043000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33585477" sideWeight="0.5097493" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36762482" sideWeight="0.4902507" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37367624" sideWeight="0.4902507" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288364" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -760,7 +761,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/app/js/common.js</url>
-          <line>467</line>
+          <line>471</line>
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="1" />
@@ -841,13 +842,7 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Desktop/BastardProto-master/app/main.html" />
-    <entry file="file://$USER_HOME$/Desktop/Bastard1-master/app/sass/_servise.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="381" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="381" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Bastard1-master/app/sass/_servise.scss" />
     <entry file="file://$PROJECT_DIR$/app/img/lending-white.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1060,7 +1055,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/services.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
+        <state relative-caret-position="19">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
@@ -1068,18 +1063,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/blog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4009">
-          <caret line="211" column="10" lean-forward="false" selection-start-line="211" selection-start-column="10" selection-end-line="211" selection-end-column="10" />
+        <state relative-caret-position="114">
+          <caret line="216" column="23" lean-forward="false" selection-start-line="216" selection-start-column="23" selection-end-line="216" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="403" column="13" lean-forward="false" selection-start-line="403" selection-start-column="13" selection-end-line="403" selection-end-column="13" />
+        <state relative-caret-position="204">
+          <caret line="395" column="50" lean-forward="false" selection-start-line="395" selection-start-column="50" selection-end-line="395" selection-end-column="50" />
           <folding>
-            <marker date="1515000104751" expanded="true" signature="23016:23019" ph="..." />
+            <marker date="1515093827136" expanded="true" signature="23131:23134" ph="..." />
           </folding>
         </state>
       </provider>

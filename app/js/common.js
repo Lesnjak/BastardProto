@@ -391,7 +391,10 @@ $(document).ready(function () {
         });
 
         var oneMoreShow=84;
-        if($(document).width()>993 ){
+
+        $(document).mousemove(function(e){
+            var Y = e.pageY; // положения по оси Y
+        if($(document).width()>993 && Y<10 ){
         $(document).mouseleave(function(){
             function fr() {
                 return oneMoreShow++;
@@ -404,6 +407,7 @@ $(document).ready(function () {
             }
         });
         }
+        });
     });
 
 
