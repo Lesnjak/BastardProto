@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef8a6073-1332-442f-a4ec-259c05c58985" name="Default" comment="3">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/webServers.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/about.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/main.html" afterPath="$PROJECT_DIR$/app/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/main.min.css" afterPath="$PROJECT_DIR$/app/css/main.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/project-page.min.css" afterPath="$PROJECT_DIR$/app/css/project-page.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/common.js" afterPath="$PROJECT_DIR$/app/js/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/common.min.js" afterPath="$PROJECT_DIR$/app/js/common.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/scripts.min.js" afterPath="$PROJECT_DIR$/app/js/scripts.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sass/_about.scss" afterPath="$PROJECT_DIR$/app/sass/_about.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sass/_blog.scss" afterPath="$PROJECT_DIR$/app/sass/_blog.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sass/_clients.scss" afterPath="$PROJECT_DIR$/app/sass/_clients.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sass/_footer.scss" afterPath="$PROJECT_DIR$/app/sass/_footer.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sass/_portfolio.scss" afterPath="$PROJECT_DIR$/app/sass/_portfolio.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sass/_servise.scss" afterPath="$PROJECT_DIR$/app/sass/_servise.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sass/_vars.scss" afterPath="$PROJECT_DIR$/app/sass/_vars.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sass/_voice.scss" afterPath="$PROJECT_DIR$/app/sass/_voice.scss" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -97,7 +80,7 @@
       <file leaf-file-name="_servise.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/sass/_servise.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-70">
+            <state relative-caret-position="287">
               <caret line="542" column="0" lean-forward="true" selection-start-line="542" selection-start-column="0" selection-end-line="542" selection-end-column="0" />
               <folding />
             </state>
@@ -279,7 +262,7 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="165" />
     <option name="y" value="-18" />
     <option name="width" value="1165" />
@@ -467,7 +450,7 @@
       <workItem from="1515234402480" duration="30000" />
       <workItem from="1516988942718" duration="1094000" />
       <workItem from="1517041304330" duration="31435000" />
-      <workItem from="1517076319849" duration="11610000" />
+      <workItem from="1517076319849" duration="11866000" />
     </task>
     <task id="LOCAL-00001" summary="new1">
       <created>1510086949418</created>
@@ -725,10 +708,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="865350000" />
+    <option name="totallyTimeSpent" value="865606000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288364" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
@@ -1128,7 +1111,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/sass/_servise.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-70">
+        <state relative-caret-position="287">
           <caret line="542" column="0" lean-forward="true" selection-start-line="542" selection-start-column="0" selection-end-line="542" selection-end-column="0" />
           <folding />
         </state>
