@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef8a6073-1332-442f-a4ec-259c05c58985" name="Default" comment="3">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/libs/fontAsome.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/libs/niseScroll.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/libs/jquery/dist/jquery.min.js" afterPath="$PROJECT_DIR$/app/libs/jquery/dist/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/libs/slick-master/slick/slick-theme.css" afterPath="$PROJECT_DIR$/app/libs/slick-master/slick/slick-theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/libs/slick-master/slick/slick.css" afterPath="$PROJECT_DIR$/app/libs/slick-master/slick/slick.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/libs/slick-master/slick/slick.js" afterPath="$PROJECT_DIR$/app/libs/slick-master/slick/slick.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/scripts.min.js" afterPath="$PROJECT_DIR$/app/js/scripts.min.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -63,12 +58,12 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="1685" column="44" lean-forward="true" selection-start-line="1685" selection-start-column="44" selection-end-line="1685" selection-end-column="44" />
+            <state relative-caret-position="17">
+              <caret line="1532" column="42" lean-forward="true" selection-start-line="1532" selection-start-column="42" selection-end-line="1532" selection-end-column="42" />
               <folding>
                 <element signature="n#style#0;n#section#8;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#section#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1517089269268" expanded="true" signature="57414:64106" ph="..." />
+                <marker date="1517089568107" expanded="true" signature="57414:64106" ph="..." />
               </folding>
             </state>
           </provider>
@@ -475,7 +470,7 @@
       <workItem from="1515234402480" duration="30000" />
       <workItem from="1516988942718" duration="1094000" />
       <workItem from="1517041304330" duration="31435000" />
-      <workItem from="1517076319849" duration="12914000" />
+      <workItem from="1517076319849" duration="13214000" />
     </task>
     <task id="LOCAL-00001" summary="new1">
       <created>1510086949418</created>
@@ -733,7 +728,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="866654000" />
+    <option name="totallyTimeSpent" value="866954000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1169,12 +1164,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="1685" column="44" lean-forward="true" selection-start-line="1685" selection-start-column="44" selection-end-line="1685" selection-end-column="44" />
+        <state relative-caret-position="17">
+          <caret line="1532" column="42" lean-forward="true" selection-start-line="1532" selection-start-column="42" selection-end-line="1532" selection-end-column="42" />
           <folding>
             <element signature="n#style#0;n#section#8;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#section#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1517089269268" expanded="true" signature="57414:64106" ph="..." />
+            <marker date="1517089568107" expanded="true" signature="57414:64106" ph="..." />
           </folding>
         </state>
       </provider>
