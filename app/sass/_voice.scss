@@ -1,13 +1,145 @@
+.circle-box {
+  .country {
+   opacity: 0;
+  }
+  p{
+    opacity: 0;
+  }
+  h4{
+    opacity: 0;
+  }
+  h5{
+    opacity: 0;
+  }
+
+  .circle {
+    position: absolute;
+    border: 4px solid grey;
+    margin:auto ;
+    border-radius: 100%;
+    overflow: hidden;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%) ;
+    box-sizing: border-box;
+    width: 220px;
+    height: 220px;
+
+  }
+}
+.center {
+  .circle-box {
+    padding: 140px  30px 5px 30px;
+    background-color: #fff;
+    box-shadow: 0 0 30px grey;
+    border-radius: 7px;
+    margin:110px auto 20px;
+    position: relative;
+    animation: zoom 0.7s;
+    .country {
+      position: relative;
+      bottom: 0;
+      background-color: $red;
+      padding: 7px 20px;
+      border-radius: 5px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      opacity: 1;
+
+
+
+    }
+    p{
+      margin-bottom: 20px;
+      opacity: 1;
+    }
+    h4{
+      opacity: 1;
+    }
+    h5{
+      opacity: 1;
+    }
+
+    .circle {
+      position: absolute;
+      border: 4px solid $red;
+      margin:auto ;
+      border-radius: 100%;
+      overflow: hidden;
+      top: -110px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      box-sizing: border-box;
+      width: 220px;
+      height: 220px;
+      a {
+        display: block;
+        cursor: pointer;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        &:before {
+          position: absolute;
+          display: block;
+          content: '';
+          background-image: url(../img/play-red.png);
+          width: 47px;
+          height: 47px;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          border-radius: 50%;
+          margin: auto;
+          opacity: .7;
+          transition: .3s;
+          z-index: 100;
+
+        }
+        &:hover:before {
+          box-shadow: 0 0 20px black;
+          opacity: 1;
+          transform: scale(1.1);
+        }
+        img {
+          width: 100%;
+
+        }
+      }
+
+    }
+  }
+}
+
+@keyframes zoom {
+  0%{
+    transform: scale(0.7);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+
+
+
+
+
+
+
 
 .voice-section {
-  background-image: url("../img/backgroundMap.png");
+
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
   position: relative;
   border-top: 4px solid white;
-  height: 790px;
+  padding-bottom: 70px;
 
   .container {
     overflow: hidden;
@@ -42,153 +174,13 @@
     }
   }
 
-  .slider-for-two {
 
-    position: absolute;
-    top: 20px;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    width: 35%;
-    z-index: 100;
-    margin: auto;
-    padding-bottom: 30px;
 
-    .slick-slide {
-      margin: 0;
 
-    }
-    .slick-list {
-
-      box-sizing: border-box;
-    }
-    .circle-box {
-      width: 80%;
-      padding: 120px 30px 50px 30px;
-      background-color: #fff;
-      box-shadow: 0 0 30px grey;
-      border-radius: 7px;
-      height: auto;
-      margin: 0 auto 40px;
-      position: relative;
-      z-index: -1;
-      .lightbox {
-        display: block;
-        margin: auto;
-
-        img {
-          width: 50px;
-          height: 50px;
-        }
-
-      }
-      .country {
-        position: absolute;
-        margin: auto;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: $red;
-        padding: 3px 15px;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-        color: #FFFFFF;
-        width: 50%;
-
-      }
-    }
-    .circle {
-      position: relative;
-      background-color: $red;
-      width: 35%;
-      top: 120px;
-      border: 4px solid $red;
-      overflow: hidden;
-      border-radius: 50%;
-      margin: auto;
-      box-sizing: border-box;
-
-      a {
-        display: block;
-        cursor: pointer;
-        position: relative;
-        width: 100%;
-        height: auto;
-        z-index: 200;
-        &:before {
-          position: absolute;
-          display: block;
-          content: '';
-          background-image: url(../img/play-red.png);
-          width: 47px;
-          height: 47px;
-          top: 0;
-          bottom: 0;
-          right: 0;
-          left: 0;
-          border-radius: 50%;
-          margin: auto;
-          opacity: .7;
-          transition: .3s;
-
-        }
-        &:hover:before {
-          box-shadow: 0 0 20px black;
-          opacity: 1;
-          transform: scale(1.1);
-        }
-      }
-      img {
-        width: 100%;
-
-      }
-    }
-
-  }
   /////////////////////////////////////////////////
-  .slider-nav-two {
-    margin-top: 105px;
-    margin-bottom: 200px;
-    position: relative;
-    .voice-section .slider-nav-two .slick-slide .slick-active:nth-child(2) {
-      margin-top: -40px;
-    }
-    .slick-current {
-      //opacity: 0;
-      transition: .1s;
-    }
-    .slick-slide {
-      margin: 0 1.5%;
-      cursor: pointer;
-      box-sizing: border-box;
-      outline: none;
-      div {
-        outline: none;
-      }
-    }
-    .country {
-      position: relative;
-      top: 10px;
-      background-color: $red;
-      padding: 7px 20px;
-      border-radius: 5px;
-      text-transform: uppercase;
-      color: #FFFFFF;
-      width: auto;
-    }
-    .circle-box {
-      padding: 20px;
-    }
-    .circle {
-      border-radius: 50%;
-      overflow: hidden;
-      border: 4px solid #d9d9d9;
-      transition: .3s;
-      &:hover {
-        border: 4px solid $red;
 
-      }
-    }
+
+
     .slick-dots {
       bottom: -92px;
     }
@@ -303,7 +295,7 @@
 
   }
 
-}
+
 
 ///////////////////////popup video////////////////////////
 .popup-wrap-video {

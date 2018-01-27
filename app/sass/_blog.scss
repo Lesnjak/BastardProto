@@ -24,90 +24,18 @@
       color: $red;
     }
   }
-  .block-wrapper-left {
-    float: left;
-    width: 49%;
-    position: relative;
-    transition: all 1s;
-    cursor: pointer;
-    &:before {
-      position: absolute;
-      content: '';
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      background: linear-gradient(transparent, black 80%);
 
-    }
-
-    &:hover:before {
-      position: absolute;
-      content: '';
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      background-color: rgba(232, 17, 17, .6);
-
-    }
-
-    &:hover:after {
-      position: absolute;
-      content: '';
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      width: 35px;
-      height: 35px;
-      margin: auto;
-      background-image: url("../img/search.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-
-    }
-    .data {
-      position: absolute;
-      top: 30px;
-      right: 0;
-      width: 140px;
-      height: 30px;
-      line-height: 30px;
-      background-color: #fff;
-      border-top-left-radius: 15px;
-      border-bottom-left-radius: 15px;
-    }
-    img {
-      width: 100%;
-      height: auto;
-
-    }
-    p {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 0 20px;
-      color: #FFFFFF;
-      text-align: left;
-
-    }
-  }
   .block-wrapper-right {
-    width: 49%;
-    float: right;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-    justify-content: space-between;
+    width: 100%;
     transition: all 1s;
 
     .block {
       position: relative;
-      width: 48%;
-      margin-bottom: 28px;
+      width: 24%;
+
       cursor: pointer;
+      float: left;
+      margin: 0.3%;
       &:before {
         position: absolute;
         content: '';
@@ -171,6 +99,20 @@
         font-size: 14px;
 
       }
+      &:first-child{
+        width: 49%;
+        p {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          padding: 0 20px;
+          color: #FFFFFF;
+          text-align: left;
+          font-size: 24px;
+
+        }
+      }
     }
 
   }
@@ -184,12 +126,12 @@
 }
 
 @media (max-width: 1400px) {
-  .blog .block-wrapper-right .block {
-    position: relative;
-    width: 48%;
-    margin-bottom: 22px;
-    cursor: pointer;
-  }
+  //.blog .block-wrapper-right .block {
+  //  position: relative;
+  //  width: 48%;
+  //  margin-bottom: 22px;
+  //  cursor: pointer;
+  //}
   .blog button {
     width: 260px;
     height: 50px;

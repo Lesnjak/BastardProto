@@ -4,7 +4,10 @@
   text-align: center;
   position: relative;
   border-top: 4px solid transparent;
-  height: 850px;
+  padding-bottom: 70px;
+  .serviseOwl-inner{
+    margin-top: 50px;
+  }
   .buttonBlackLine:hover{
     background-color: #FFFFFF;
   }
@@ -239,40 +242,12 @@
 
   .content-box{
     position: relative;
-    .slider-shoise{
-      position: absolute;
-      margin:auto;
-      top: 50px;
-      left: 0;
-      right: 0;
-      width: 85%;
 
-      .grey-box{
-        float: left;
-        width: 50%;
-
-        & img{
-          box-shadow: none;
-          width: 100%;
-        }
-
-      }
-      .content-box{
-        text-align: left;
-        float: left;
-        width: 50%;
-        padding:20px 20px;
-
-      }
-      button{
-        margin-right: 30px;
-        width: 44%;
-      }
-    }
 
   }
 
 }
+
 @media (max-width: 1400px) {
   .servise{
     height: 760px;
@@ -416,5 +391,183 @@
 @media (max-width: 380px) {
   .servise {
     height: 1000px;
+  }
+}
+
+
+
+
+/* end fix */
+.serviseOwl .owl-nav > div {
+  margin-top: -26px;
+  position: absolute;
+  top: 50%;
+  color: #cdcbcd;
+}
+
+.serviseOwl .owl-nav i {
+  font-size: 52px;
+}
+
+.serviseOwl .owl-nav .owl-prev {
+  left: -40px;
+  .prev{
+    width: 30px;
+  }
+}
+
+.serviseOwl .owl-nav .owl-next {
+  right: -40px;
+  .next{
+    width: 30px;
+  }
+
+}
+.circle-image-box-new{
+  text-align: center;
+  cursor: pointer;
+  .img-change{
+    margin: auto;
+    width: 112px;
+    height: 112px;
+    border: 2px solid #000;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    img{
+      width:70%;
+      &:nth-child(2){
+        display: none;
+      }
+    }
+
+
+  }
+  &:hover{
+    .img-change{
+      margin: auto;
+      width: 125px;
+      height: 125px;
+      border: 2px solid $red;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        width: 70%;
+        &:nth-child(2){
+          display: block;
+        }
+        &:nth-child(1){
+          display: none;
+        }
+      }
+
+
+    }
+    span{
+      color: $red;
+    }
+  }
+  &:hover{
+    .img-change{
+      margin: auto;
+      width: 125px;
+      height: 125px;
+      border: 2px solid $red;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        width: 70%;
+        &:nth-child(2){
+          display: block;
+        }
+        &:nth-child(1){
+          display: none;
+        }
+      }
+
+
+    }
+    span{
+      color: $red;
+    }
+  }
+  .new-p{
+    font-size: 18px;
+  }
+
+}
+.center .circle-image-box-new{
+  .img-change{
+    margin: auto;
+    width: 125px;
+    height: 125px;
+    border: 2px solid $red;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      width: 70%;
+      &:nth-child(2){
+        display: block;
+      }
+      &:nth-child(1){
+        display: none;
+      }
+    }
+
+
+  }
+  span{
+    color: $red;
+  }
+}
+.serviseOwl-inner .slider-shoise{
+  margin:auto;
+  top: 50px;
+  left: 0;
+  right: 0;
+  width: 90%;
+  display: flex;
+  align-items: center;
+
+  .grey-box{
+    float: left;
+    width: 50%;
+
+    & img{
+      box-shadow: none;
+      width: 100%;
+    }
+
+  }
+  .content-box{
+    text-align: left;
+    float: left;
+    width: 50%;
+    padding:20px 20px;
+
+
+  }
+  button{
+    margin-right: 20px;
+    width: 44%;
+  }
+}
+@media (max-width: 1400px) {
+  .serviseOwl-inner .slider-shoise {
+    margin: auto;
+    top: 50px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
   }
 }

@@ -416,185 +416,185 @@ $(document).ready(function () {
     var slicPort = $('.slider-nav');
 
 
-    slicPort.slick({
-        infinite: false,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        speed: 500,
-        dots: true,
-        responsive: [
-            {
-                breakpoint: 993,
-                settings: {
-                    slidesToShow: 3
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 2,
-                    dots: false
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    dots: false
-                }
-            }
-        ]
-
-    });
+    // slicPort.slick({
+    //     infinite: false,
+    //     slidesToShow: 4,
+    //     slidesToScroll: 1,
+    //     speed: 500,
+    //     dots: true,
+    //     responsive: [
+    //         {
+    //             breakpoint: 993,
+    //             settings: {
+    //                 slidesToShow: 3
+    //             }
+    //         },
+    //         {
+    //             breakpoint: 768,
+    //             settings: {
+    //                 slidesToShow: 2,
+    //                 dots: false
+    //             }
+    //         },
+    //         {
+    //             breakpoint: 480,
+    //             settings: {
+    //                 slidesToShow: 1,
+    //                 dots: false
+    //             }
+    //         }
+    //     ]
+    //
+    // });
 
     //////////////////////////slider video///////////////////////////////
-    $('.slider-for-two').slick({
-        touchMove: false,
-        swipe: true,
-        slidesToShow: 1,
-
-        arrows: false,
-        speed: 400,
-        loop: false,
-        // vertical:true,
-        asNavFor: '.slider-nav-two'
-    });
-    $('.slider-nav-two').slick({
-        touchMove: false,
-        centerMode: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        speed: 400,
-        asNavFor: '.slider-for-two',
-        dots: true,
-        focusOnSelect: true
-
-    });
+    // $('.slider-for-two').slick({
+    //     touchMove: false,
+    //     swipe: true,
+    //     slidesToShow: 1,
+    //
+    //     arrows: false,
+    //     speed: 400,
+    //     loop: false,
+    //     // vertical:true,
+    //     asNavFor: '.slider-nav-two'
+    // });
+    // $('.slider-nav-two').slick({
+    //     touchMove: false,
+    //     centerMode: true,
+    //     slidesToShow: 3,
+    //     slidesToScroll: 1,
+    //     speed: 400,
+    //     asNavFor: '.slider-for-two',
+    //     dots: true,
+    //     focusOnSelect: true
+    //
+    // });
 ////////////////////////////////////////////slider servises////////////////////////
-    $('.slider-nav-six').slick({
-        loop: true,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        speed: 500,
-        responsive: [
-            {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 4
-                }
-            },
-            {
-                breakpoint: 993,
-                settings: {
-                    slidesToShow: 3
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 2
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 2
-                }
-            }
-        ]
-
-    });
-    $('.slider-nav-five').slick({
-        loop: true,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        speed: 500,
-        responsive: [
-            {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 4
-                }
-            },
-            {
-                breakpoint: 993,
-                settings: {
-                    slidesToShow: 3
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 2
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1
-                }
-            }
-        ]
-
-    });
-    $('.slider-project').slick({
-        loop: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        dots:true,
-        speed: 500,
-        appendArrows: $('.buttons-block-proj'),
-        prevArrow:'<div id="prev"><span class="rotat">➞</span><span>Назад </span></div>',
-        nextArrow:'<div id="next"><span>Вперед </span><span>➞</span></div>',
-        responsive: [
-            {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow:3
-                }
-            },
-            {
-                breakpoint: 993,
-                settings: {
-                    slidesToShow: 3
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 3
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 2
-                }
-            }
-        ]
-
-    });
-    $('.slider-nav .slick-slide ').on('click', function (e) {
-        $('.slick-slide').removeClass('slick-current');
-
-        $(e.target).parent().parent().parent().addClass('slick-current');
-    });
-
-    $('a[data-slide]').click(function (e) {
-        e.preventDefault();
-        var slideno = $(this).data('slide');
-        $('.slider-nav').slick('slickGoTo', slideno - 1);
-    });
-
-    $('.slider-nav img ').on('click', function (e) {
-        var target = e.target;
-
-        $('.slider-nav img').parent().removeClass('focus');
-        $(target).parent().addClass('focus');
-        console.log(target);
-
-
-    });
+//     $('.slider-nav-six').slick({
+//         loop: true,
+//         slidesToShow: 5,
+//         slidesToScroll: 1,
+//         speed: 500,
+//         responsive: [
+//             {
+//                 breakpoint: 1200,
+//                 settings: {
+//                     slidesToShow: 4
+//                 }
+//             },
+//             {
+//                 breakpoint: 993,
+//                 settings: {
+//                     slidesToShow: 3
+//                 }
+//             },
+//             {
+//                 breakpoint: 768,
+//                 settings: {
+//                     slidesToShow: 2
+//                 }
+//             },
+//             {
+//                 breakpoint: 480,
+//                 settings: {
+//                     slidesToShow: 2
+//                 }
+//             }
+//         ]
+//
+//     });
+//     $('.slider-nav-five').slick({
+//         loop: true,
+//         slidesToShow: 5,
+//         slidesToScroll: 1,
+//         speed: 500,
+//         responsive: [
+//             {
+//                 breakpoint: 1200,
+//                 settings: {
+//                     slidesToShow: 4
+//                 }
+//             },
+//             {
+//                 breakpoint: 993,
+//                 settings: {
+//                     slidesToShow: 3
+//                 }
+//             },
+//             {
+//                 breakpoint: 768,
+//                 settings: {
+//                     slidesToShow: 2
+//                 }
+//             },
+//             {
+//                 breakpoint: 480,
+//                 settings: {
+//                     slidesToShow: 1
+//                 }
+//             }
+//         ]
+//
+//     });
+//     $('.slider-project').slick({
+//         loop: true,
+//         slidesToShow: 3,
+//         slidesToScroll: 1,
+//         dots:true,
+//         speed: 500,
+//         appendArrows: $('.buttons-block-proj'),
+//         prevArrow:'<div id="prev"><span class="rotat">➞</span><span>Назад </span></div>',
+//         nextArrow:'<div id="next"><span>Вперед </span><span>➞</span></div>',
+//         responsive: [
+//             {
+//                 breakpoint: 1200,
+//                 settings: {
+//                     slidesToShow:3
+//                 }
+//             },
+//             {
+//                 breakpoint: 993,
+//                 settings: {
+//                     slidesToShow: 3
+//                 }
+//             },
+//             {
+//                 breakpoint: 768,
+//                 settings: {
+//                     slidesToShow: 3
+//                 }
+//             },
+//             {
+//                 breakpoint: 480,
+//                 settings: {
+//                     slidesToShow: 2
+//                 }
+//             }
+//         ]
+//
+//     });
+//     $('.slider-nav .slick-slide ').on('click', function (e) {
+//         $('.slick-slide').removeClass('slick-current');
+//
+//         $(e.target).parent().parent().parent().addClass('slick-current');
+//     });
+//
+//     $('a[data-slide]').click(function (e) {
+//         e.preventDefault();
+//         var slideno = $(this).data('slide');
+//         $('.slider-nav').slick('slickGoTo', slideno - 1);
+//     });
+//
+//     $('.slider-nav img ').on('click', function (e) {
+//         var target = e.target;
+//
+//         $('.slider-nav img').parent().removeClass('focus');
+//         $(target).parent().addClass('focus');
+//         console.log(target);
+//
+//
+//     });
 
 
 /////////////////////////////////////////////////////////////
@@ -763,4 +763,218 @@ $(window).scroll(function() {
 
 });
 
+$(document).ready(function() {
+    function slyDer(big, trumbs, nav) {
+        var bigimage = $(big);
+        var thumbs = $(trumbs);
+        var totalslides = 10;
+        var syncedSecondary = true;
 
+        bigimage.owlCarousel({
+            items : 1,
+            slideSpeed : 2000,
+            loop: true,
+            dots: false,
+            nav: false,
+            animateOut: 'fadeOut',
+            responsiveRefreshRate : 200,
+
+        }).on('changed.owl.carousel', syncPosition);
+
+        thumbs
+            .on('initialized.owl.carousel', function () {
+                thumbs.find(".owl-item").eq(0).addClass("current");
+            })
+            .owlCarousel({
+                items : 4,
+                dots: nav,
+                nav: nav,
+                navText: [' <div  class="prev" style=""><span>назаД </span><span class="rotat rotat1">➞</span></div>', '<div  class="next" ><span>Вперед </span> <span class="rotat" >➞</span></div>'],
+                smartSpeed: 200,
+                slideSpeed : 500,
+
+                responsiveRefreshRate : 100
+            }).on('changed.owl.carousel', syncPosition2);
+
+        function syncPosition(el) {
+            //if loop is set to false, then you have to uncomment the next line
+            //var current = el.item.index;
+
+            //to disable loop, comment this block
+            var count = el.item.count-1;
+            var current = Math.round(el.item.index - (el.item.count/2) - .5);
+
+            if(current < 0) {
+                current = count;
+            }
+            if(current > count) {
+                current = 0;
+            }
+            //to this
+            thumbs
+                .find(".owl-item")
+                .removeClass("current")
+                .eq(current)
+                .addClass("current");
+            var onscreen = thumbs.find('.owl-item.active').length - 1;
+            var start = thumbs.find('.owl-item.active').first().index();
+            var end = thumbs.find('.owl-item.active').last().index();
+
+            if (current > end) {
+                thumbs.data('owl.carousel').to(current, 100, true);
+            }
+            if (current < start) {
+                thumbs.data('owl.carousel').to(current - onscreen, 100, true);
+            }
+        }
+
+        function syncPosition2(el) {
+            if(syncedSecondary) {
+                var number = el.item.index;
+                bigimage.data('owl.carousel').to(number, 100, true);
+            }
+        }
+
+        thumbs.on("click", ".owl-item", function(e){
+            e.preventDefault();
+            var number = $(this).index();
+            bigimage.data('owl.carousel').to(number, 300, true);
+        });
+    }
+
+    slyDer('.big','.thumbs', true);
+var tabIndex =  $('.main-slider-box .tabs label');
+var tabInner =  $('.main-slider-box .outer');
+    tabIndex.eq(0).addClass('activ-label');
+    tabInner.eq(0).addClass('activ-inner');
+    tabInner.eq(0).children().eq(0).addClass('big');
+    tabInner.eq(0).children().eq(1).addClass('thumbs');
+   tabIndex.click(function () {
+       slyDer('.big1','.thumbs1',true);
+       var index = tabIndex.index(this);
+      tabIndex.removeClass('activ-label');
+      tabInner.removeClass('activ-inner');
+       tabInner.eq(index).children().eq(0).removeClass('big');
+       tabInner.eq(index).children().eq(1).removeClass('thumbs');
+      tabInner.eq(index).children().eq(0).addClass('big'+index);
+      tabInner.eq(index).children().eq(1).addClass('thumbs'+index);
+      $(this).addClass('activ-label');
+      tabInner.eq(index).addClass('activ-inner');
+       slyDer('.big'+index,'.thumbs'+index ,true);
+
+
+    console.log(index);
+ });
+    $('.voises-owl').owlCarousel({
+        center: true,
+        items : 3,
+        loop: true,
+        nav: true,
+        slideSpeed : 500,
+        smartSpeed : 500,
+        navText: [' <div  class="prev" style=""><span>назаД </span><span class="rotat rotat1">➞</span></div>', '<div  class="next" ><span>Вперед </span> <span class="rotat" >➞</span></div>'],
+    });
+    // $('.serviseOwl').owlCarousel({
+    //     loop: true,
+    //     center: true,
+    //     items : 5,
+    //     margin: 10,
+    //     nav: true,
+    //     navText: [' <div  class="prev" style=""><span> </span><span class="rotat rotat1">➞</span></div>', '<div  class="next" ><span></span> <span class="rotat" >➞</span></div>'],
+    //     responsive: {
+    //         0: {
+    //             items: 1
+    //         },
+    //         600: {
+    //             items: 3
+    //         },
+    //         1000: {
+    //             items: 5
+    //         }
+    //     }
+    // })
+    function slyDerServ(big, trumbs, nav, items) {
+        var bigimage = $(big);
+        var thumbs = $(trumbs);
+        var totalslides = 10;
+        var syncedSecondary = true;
+
+        bigimage.owlCarousel({
+            items : 1,
+            slideSpeed :2000,
+            loop: true,
+            dots: false,
+            nav: false,
+            animateOut: 'fadeOut',
+            responsiveRefreshRate : 200,
+
+        }).on('changed.owl.carousel', syncPosition);
+
+        thumbs
+            .on('initialized.owl.carousel', function () {
+                thumbs.find(".owl-item").eq(0).addClass("current");
+            })
+            .owlCarousel({
+                items :5,
+                dots: nav,
+                nav: nav,
+                navText: [' <div  class="prev" style=""><span> </span><span class="rotat rotat1">➞</span></div>', '<div  class="next" ><span></span> <span class="rotat" >➞</span></div>'],
+                smartSpeed: 200,
+                slideSpeed : 500,
+
+                responsiveRefreshRate : 100
+            }).on('changed.owl.carousel', syncPosition2);
+
+        function syncPosition(el) {
+            //if loop is set to false, then you have to uncomment the next line
+            //var current = el.item.index;
+
+            //to disable loop, comment this block
+            var count = el.item.count-1;
+            var current = Math.round(el.item.index - (el.item.count/2) - .5);
+
+            if(current < 0) {
+                current = count;
+            }
+            if(current > count) {
+                current = 0;
+            }
+            //to this
+            thumbs
+                .find(".owl-item")
+                .removeClass("current")
+                .eq(current)
+                .addClass("current");
+            var onscreen = thumbs.find('.owl-item.active').length - 1;
+            var start = thumbs.find('.owl-item.active').first().index();
+            var end = thumbs.find('.owl-item.active').last().index();
+
+            if (current > end) {
+                thumbs.data('owl.carousel').to(current, 100, true);
+            }
+            if (current < start) {
+                thumbs.data('owl.carousel').to(current - onscreen, 100, true);
+            }
+        }
+
+        function syncPosition2(el) {
+            if(syncedSecondary) {
+                var number = el.item.index;
+                bigimage.data('owl.carousel').to(number, 100, true);
+            }
+        }
+
+        thumbs.on("click", ".owl-item", function(e){
+            e.preventDefault();
+            var number = $(this).index();
+            bigimage.data('owl.carousel').to(number, 300, true);
+        });
+    }
+    slyDerServ('.serviseOwl-inner','.serviseOwl', true);
+    $('.serviseOwl .owl-item').eq(2).addClass('center');
+    $('.serviseOwl .owl-item').click(function () {
+        $('.serviseOwl .owl-item').removeClass('center');
+        $(this).addClass('center');
+    })
+
+});
