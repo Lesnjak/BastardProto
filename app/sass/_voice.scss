@@ -29,15 +29,16 @@
 }
 .center {
   .circle-box {
-    padding: 140px  30px 5px 30px;
+    padding: 140px  30px 30px 30px;
     background-color: #fff;
     box-shadow: 0 0 30px grey;
     border-radius: 7px;
     margin:110px auto 20px;
     position: relative;
     animation: zoom 0.7s;
+    position: relative;
     .country {
-      position: relative;
+      position: absolute;
       bottom: 0;
       background-color: $red;
       padding: 7px 20px;
@@ -47,6 +48,13 @@
       text-transform: uppercase;
       color: #FFFFFF;
       opacity: 1;
+      margin: 0 auto ;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 70%;
+
+
+
 
 
 

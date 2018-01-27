@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ef8a6073-1332-442f-a4ec-259c05c58985" name="Default" comment="3">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/scripts.min.js" afterPath="$PROJECT_DIR$/app/js/scripts.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/main.min.css" afterPath="$PROJECT_DIR$/app/css/main.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sass/_voice.scss" afterPath="$PROJECT_DIR$/app/sass/_voice.scss" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,6 +45,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="_voice.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/sass/_voice.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="49" column="17" lean-forward="true" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="common.js" pinned="true" current-in-tab="false">
         <entry file="remoteDeploymentFS://&lt;5d3b21dc-217c-4243-9336-9f20b190cff3&gt;/maxsite.zp.ua/www/wp-content/themes/bastard-theme/app/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -55,16 +65,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="7667">
               <caret line="1532" column="42" lean-forward="true" selection-start-line="1532" selection-start-column="42" selection-end-line="1532" selection-end-column="42" />
               <folding>
                 <element signature="n#style#0;n#section#8;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#section#10;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <marker date="1517089568107" expanded="true" signature="57414:64106" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_about.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/sass/_about.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1734">
+              <caret line="102" column="12" lean-forward="true" selection-start-line="102" selection-start-column="12" selection-end-line="102" selection-end-column="12" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -184,7 +204,6 @@
         <option value="$PROJECT_DIR$/app/sass/_portfolio.scss" />
         <option value="$PROJECT_DIR$/app/js/common.js" />
         <option value="$PROJECT_DIR$/app/sass/_about.scss" />
-        <option value="$PROJECT_DIR$/app/sass/_voice.scss" />
         <option value="$PROJECT_DIR$/app/sass/_clients.scss" />
         <option value="&lt;5d3b21dc-217c-4243-9336-9f20b190cff3&gt;/maxsite.zp.ua/www/wp-content/themes/bastard-theme/index.php" />
         <option value="&lt;5d3b21dc-217c-4243-9336-9f20b190cff3&gt;/maxsite.zp.ua/www/wp-content/themes/bastard-theme/template-parts/main-new.php" />
@@ -199,6 +218,7 @@
         <option value="$PROJECT_DIR$/app/libs/fontAsome.css" />
         <option value="$PROJECT_DIR$/app/libs/niseScroll.js" />
         <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/sass/_voice.scss" />
       </list>
     </option>
   </component>
@@ -470,7 +490,7 @@
       <workItem from="1515234402480" duration="30000" />
       <workItem from="1516988942718" duration="1094000" />
       <workItem from="1517041304330" duration="31435000" />
-      <workItem from="1517076319849" duration="13214000" />
+      <workItem from="1517076319849" duration="13754000" />
     </task>
     <task id="LOCAL-00001" summary="new1">
       <created>1510086949418</created>
@@ -728,7 +748,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="866954000" />
+    <option name="totallyTimeSpent" value="867494000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1044,14 +1064,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/sass/_about.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="102" column="12" lean-forward="true" selection-start-line="102" selection-start-column="12" selection-end-line="102" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/sass/blogArticle.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50592">
@@ -1064,14 +1076,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/sass/_voice.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="134" column="0" lean-forward="false" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1164,13 +1168,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="7667">
           <caret line="1532" column="42" lean-forward="true" selection-start-line="1532" selection-start-column="42" selection-end-line="1532" selection-end-column="42" />
           <folding>
             <element signature="n#style#0;n#section#8;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#section#10;n#body#0;n#html#0;n#!!top" expanded="true" />
             <marker date="1517089568107" expanded="true" signature="57414:64106" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/sass/_about.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1734">
+          <caret line="102" column="12" lean-forward="true" selection-start-line="102" selection-start-column="12" selection-end-line="102" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/sass/_voice.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="49" column="17" lean-forward="true" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
