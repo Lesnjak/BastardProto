@@ -792,8 +792,20 @@ $(document).ready(function() {
                 navText: [' <div  class="prev" style=""><span>назаД </span><span class="rotat rotat1">➞</span></div>', '<div  class="next" ><span>Вперед </span> <span class="rotat" >➞</span></div>'],
                 smartSpeed: 200,
                 slideSpeed : 500,
+                responsive:{
+                    0:{
+                        items:2,
 
-                responsiveRefreshRate : 100
+                    },
+                    768:{
+                        items:3,
+
+                    },
+                    1000:{
+                        items:4,
+
+                    }
+                }
             }).on('changed.owl.carousel', syncPosition2);
 
         function syncPosition(el) {
@@ -873,6 +885,17 @@ var tabInner =  $('.main-slider-box .outer');
         slideSpeed : 500,
         smartSpeed : 500,
         navText: [' <div  class="prev" style=""><span>назаД </span><span class="rotat rotat1">➞</span></div>', '<div  class="next" ><span>Вперед </span> <span class="rotat" >➞</span></div>'],
+        responsive:{
+            0:{
+                items:1
+            },
+            993:{
+                items:2
+            },
+            1200:{
+                items:3
+            }
+        }
     });
     // $('.serviseOwl').owlCarousel({
     //     loop: true,
@@ -921,8 +944,20 @@ var tabInner =  $('.main-slider-box .outer');
                 navText: [' <div  class="prev" style=""><span> </span><span class="rotat rotat1">➞</span></div>', '<div  class="next" ><span></span> <span class="rotat" >➞</span></div>'],
                 smartSpeed: 200,
                 slideSpeed : 500,
+                responsive:{
+                    0:{
+                        items:2
 
-                responsiveRefreshRate : 100
+                    },
+                    768:{
+                        items:3
+
+                    },
+                    993:{
+                        items:5,
+
+                    }
+                }
             }).on('changed.owl.carousel', syncPosition2);
 
         function syncPosition(el) {

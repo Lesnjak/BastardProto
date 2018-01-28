@@ -209,7 +209,11 @@ h2 {
 
   }
 }
-
+.tabs{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
 .tabs label{
   text-transform: uppercase;
   font-size: 24px;
@@ -218,7 +222,7 @@ h2 {
   transition: .3s;
   cursor: pointer;
   position: relative;
-  margin: 0 20px;
+  margin: 10px 12px 0;
   &:hover, &:focus {
     color: $red;
 
@@ -242,7 +246,7 @@ h2 {
   transition: .3s;
   cursor: pointer;
   position: relative;
-  margin: 0 20px;
+  margin: 10px 12px 0;
  &:before {
     position: absolute;
     content: '';
@@ -256,59 +260,66 @@ h2 {
 }
 
 @media (max-width: 1200px) {
-  .tabs label {
-    font-size: 22px;
 
-  }
 }
 
 @media (max-width: 993px) {
-  .tabs label {
-    font-size: 18px;
-    margin: 0 10px;
+  .tabs label{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: "Gilroy Bold", sans-serif;
+    color: black;
+    transition: .3s;
+    cursor: pointer;
+    position: relative;
+    margin: 10px 12px 0;
+    &:hover, &:focus {
+      color: $red;
+
+    }
     &:hover:before {
-      height: 2px;
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 3px;
+      background-color: $red;
+      bottom: -2px;
+
+    }
+
+  }
+  .tabs .activ-label{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: "Gilroy Bold", sans-serif;
+    color: $red;
+    transition: .3s;
+    cursor: pointer;
+    position: relative;
+    margin: 10px 12px 0;
+    &:before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 3px;
+      background-color: $red;
+      bottom: -2px;
+
     }
 
   }
 }
 
 @media (max-width: 768px) {
-  .tabs {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 
-  }
-  .tabs label {
-    font-size: 22px;
-    &:hover:before {
-      position: absolute;
-      content: '';
-      width: 100%;
-      height: 0;
-      background-color: $red;
-      bottom: -2px;
-
-    }
-    &:hover:before {
-      height: 0;
-
-    }
-
-  }
 }
 
 @media (max-width: 620px) {
-  .tabs label {
-    font-size: 21px;
-  }
+
 }
 
 @media (max-width: 510px) {
-  .tabs label {
-    position: relative;
-  }
+
 
 }
 
@@ -329,7 +340,7 @@ h3 {
 
 @media (max-width: 993px) {
   h3 {
-    font-size: 16px;
+    font-size: 18px;
   }
 
 }
@@ -351,7 +362,7 @@ h4 {
 
 @media (max-width: 993px) {
   h4 {
-    font-size: 17px;
+    font-size: 18px;
 
   }
 }
@@ -393,7 +404,7 @@ h5 {
   .content-for-p {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 12px;
+    font-size: 16px;
 
   }
 }

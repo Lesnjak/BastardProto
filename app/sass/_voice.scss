@@ -395,7 +395,7 @@
 @media (max-width: 1200px) {
   .voice-section {
 
-    background-size: 130%;
+    background-size: 140%;
   }
   .voice-section .slider-nav-two .slick-slide {
 
@@ -428,7 +428,6 @@
     }
   }
   .voice-section {
-    height: 650px;
     background-size: 155%;
   }
   .voice-section .slider-nav-two .slick-next {
@@ -440,6 +439,9 @@
     left: 220px;
     top: 330px;
 
+  }
+  .center .circle-box {
+    width: 70%;
   }
 
 }
@@ -474,7 +476,9 @@
     top: 335px;
 
   }
-
+  .center .circle-box {
+    width: 85%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -504,9 +508,7 @@
 
 @media (max-width: 600px) {
   .voice-section {
-
     background-size: 350%;
-    height: 680px;
   }
   .voice-section .slider-for-two .circle-box {
     padding: 120px 10px 60px 10px;
