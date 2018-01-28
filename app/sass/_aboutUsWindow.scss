@@ -784,6 +784,18 @@ height: auto;
 
   }
 }
-
+.our-works .voises-owl-team{
+  width: 75%;
+  margin: 30px auto 0;
+}
+.our-works {
+  padding-bottom: 40px;
+}
+@media (max-width: 1200px) {
+  .our-works .voises-owl-team{
+    width: 100%;
+    margin: 30px auto 0;
+  }
+}
 
 

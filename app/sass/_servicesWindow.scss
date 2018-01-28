@@ -13,6 +13,7 @@ text-align: center;
   background-image: url(../img/bg-serv-serv.png);
   background-position: 0 0;
   background-size: cover;
+  padding-bottom: 0;
   .filter{
     .header {
       .nameBlock {
@@ -867,4 +868,33 @@ animation: bottomLine 3s;
   .servise-servise .slider-nav-three .slick-next {
     right: -50px;
   }
+}
+
+
+.our-services .owl-nav > div {
+  margin-top: -26px;
+  position: absolute;
+  top: 50%;
+  color: #cdcbcd;
+}
+
+.our-services .owl-nav i {
+  font-size: 52px;
+  color: #fff;
+}
+.our-services .owl-nav .owl-prev {
+  left: -40px;
+  .prev{
+    width: 30px;
+    color: #fff;
+  }
+}
+
+.our-services .owl-nav .owl-next {
+  right: -40px;
+  .next{
+    width: 30px;
+    color: #fff;
+  }
+
 }

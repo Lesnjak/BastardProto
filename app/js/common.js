@@ -897,6 +897,53 @@ var tabInner =  $('.main-slider-box .outer');
             }
         }
     });
+    $('.voises-owl-team').owlCarousel({
+        center: true,
+        items : 3,
+        loop: true,
+        nav: true,
+        slideSpeed : 500,
+        smartSpeed : 500,
+        navText: [' <div  class="prev" style=""><span>назаД </span><span class="rotat rotat1">➞</span></div>', '<div  class="next" ><span>Вперед </span> <span class="rotat" >➞</span></div>'],
+        responsive:{
+            0:{
+                items:1
+            },
+            480:{
+                items:2
+            },
+            993:{
+                items:3
+            },
+            1200:{
+                items:3
+            }
+        }
+    });
+    $('.our-services').owlCarousel({
+        center: true,
+        items : 5,
+        loop: true,
+        nav: true,
+        slideSpeed : 500,
+        smartSpeed : 500,
+        navText: [' <div  class="prev" style=""><span class="rotat rotat1">➞</span></div>', '<div  class="next" ><span class="rotat" >➞</span></div>'],
+        responsive:{
+            0:{
+                items:2
+            },
+            480:{
+                items:3
+            },
+            993:{
+                items:4
+            },
+            1200:{
+                items:5
+            }
+        }
+    });
+
     // $('.serviseOwl').owlCarousel({
     //     loop: true,
     //     center: true,
